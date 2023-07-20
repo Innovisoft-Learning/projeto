@@ -113,7 +113,7 @@ div.parte-direita-header {
 .menu {
     width: 97.3vw;
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
 }
   
 .ft-perfil {
