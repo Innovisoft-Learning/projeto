@@ -18,6 +18,10 @@
 
 body {
     background-color: var(--cor05);
+    background-image: url(../imagens/design-g5cdc793df_1280.png);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*Começo da cofiguração do header*/

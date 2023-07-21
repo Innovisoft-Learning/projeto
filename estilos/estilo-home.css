@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur&family=VT323&family=Victor+Mono&display=swap');
 
 :root {
     --cor01: #4E3E90;
@@ -8,6 +9,9 @@
     --cor04: #46FFFF;
     --cor05: #06032b;
     --fonte01: 'Bungee', cursive;
+    --fonte02: 'Tektur', cursive;
+    --fonte03: 'VT323', monospace;
+    --fonte04: 'Victor Mono', monospace;
 }
 
 * {
@@ -21,6 +25,7 @@ body {
 }
 
 /*Começo da cofiguração do header*/
+
 .header > .parte-cima-header { /*Auto explicativo*/
     display: flex;
     flex-direction: row;
@@ -28,7 +33,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    background-color: var(--cor01);
+    background-color: var(--cor05);
     width: 100%;
     height: 140px;
     margin: 0;
@@ -44,7 +49,7 @@ body {
 .nome-logo > h1 > a { /*Codenect escrito do lado da logo*/
     font-family: var(--fonte01);
     font-size: 1.8em;
-    color: white;
+    color: var(--cor03);
     text-decoration: none;
     text-shadow: 2px 2px 2px black;
 }
@@ -77,7 +82,7 @@ body {
     outline: none;
     border-radius: 25px;
     transition: all .5s ease-in-out;
-    background-color: var(--cor05);
+    background-color: var(--cor03);
     padding-right: 40px;
     color:#fff;
 }
@@ -128,7 +133,7 @@ body {
 }
 
 .menu { /*Para o menu principal*/
-    background-color: var(--cor01);
+    background-color: var(--cor05);
     width: 97.3vw;
     display: flex;
     justify-content: space-around;
@@ -168,7 +173,7 @@ li { /* Para listas no geral*/
 
 .cursos-nav:hover > .submenu { /*Aparecer o submenu quando passar por cima de cursos*/
     display: block;
-    background-color: var(--cor01);
+    background-color: var(--cor05);
 }
 
 @keyframes animacao1 { /*Para criar a animacao1 usada abaixo*/
@@ -179,7 +184,7 @@ li { /* Para listas no geral*/
 .submenu {
     animation: animacao1 0.3s ease-in; /*Animação do submenu*/
     display: none;
-    background-color: var(--cor01);
+    background-color: var(--cor05);
     width: 130px;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
@@ -199,39 +204,48 @@ li { /* Para listas no geral*/
 .submenu > li > a:hover { /*Quando passar o mouse por cima de cada curso*/
     text-decoration: underline;
 } 
+
 /*Fim das configurações do header*/
 
-main {
+
+/*Início das configurações do main*/
+
+main { /*Parte principal do site*/
     display: flex;
-    flex-wrap: wrap;
-    margin: 20% 30% 30% 20%;
-    height: 50%;
+    background-color: rgb(247, 247, 247);
+    height: 100vh;
+    
 }
 
-.slogan {
-    color: var(--cor04);
+.parte-esquerda-slogan { /*Configuração da parte onde o slogan aparece */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 50vw;
-    padding: 40px;
-    background-color: var(--cor01);
-    border: 2px solid var(--cor04);
-    border-radius: 25px;
+    height: 600px;
+    border-bottom: 8px solid var(--cor05);
+}   
 
+.parte-esquerda-slogan > h1, h2 { /*Configuração dos titulos do slogan */
+    font-family: var(--fonte03);
+    color: var(--cor05);
+    text-align: center;
+    font-size: 2.8em;
 }
 
-.slogan > h1 {
-    font-size: 36px;
+.parte-esquerda-slogan > p { /*Configuração do parágrafo do slogan */
+    font-family: var(--fonte02);
+    color: var(--cor01);
+    text-align: center;
+    font-size: 1em;
 }
 
-.slogan > h2 {
-    font-size: 24px;
-}
-
-.slogan > p {
-    color: white;
-    font-size: 17px;
+.parte-direita-slogan { /*Configuração da imagem ao lado do slogan */
+    display: flex;
+    height: 600px;
+    width: 50vw;
+    background-image: url(../imagens/social-media-g92be9e10f_1280.png);
+    background-size: cover;
+    border-bottom: 8px solid var(--cor05);
 }
 
