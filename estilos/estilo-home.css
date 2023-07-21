@@ -162,7 +162,7 @@ li { /* Para listas no geral*/
 }
 
 .menu > li > p { /*Especificamente para o <p> Cursos */
-    text-decoration: none;
+    cursor: default;
     color: rgb(218, 218, 218);
     font-family: var(--fonte01);
     text-shadow: 1px 1px 1px black;
@@ -213,9 +213,8 @@ li { /* Para listas no geral*/
 /*Início das configurações do main*/
 
 main { /*Parte principal do site*/
-    display: flex;
     background-color: rgb(247, 247, 247);
-    height: 100vh;
+    height: 1000px;
     
 }
 
@@ -253,3 +252,13 @@ main { /*Parte principal do site*/
     border-bottom: 8px solid var(--cor05);
 }
 
+.parte-cima-main {
+    display: flex;
+}
+
+.cursos-quadrados {
+    display: flex;
+    height: 500px;
+    background-color: var(--cor05);
+    width: 98.75vw;
+}

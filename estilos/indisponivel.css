@@ -158,7 +158,7 @@ li { /* Para listas no geral*/
 }
 
 .menu > li > p { /*Especificamente para o <p> Cursos */
-    text-decoration: none;
+    cursor: default;
     color: rgb(218, 218, 218);
     font-family: var(--fonte01);
     text-shadow: 1px 1px 1px black;
