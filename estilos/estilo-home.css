@@ -182,6 +182,8 @@ li { /* Para listas no geral*/
 }
 
 .submenu {
+    position: absolute;
+    z-index: 1;
     animation: animacao1 0.3s ease-in; /*Animação do submenu*/
     display: none;
     background-color: var(--cor05);
@@ -234,10 +236,12 @@ main { /*Parte principal do site*/
 }
 
 .parte-esquerda-slogan > p { /*Configuração do parágrafo do slogan */
+    z-index: 0;
     font-family: var(--fonte02);
     color: var(--cor01);
     text-align: center;
-    font-size: 1em;
+    font-size: 1.3em;
+    font-weight: bold;
 }
 
 .parte-direita-slogan { /*Configuração da imagem ao lado do slogan */

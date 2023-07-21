@@ -178,6 +178,8 @@ li { /* Para listas no geral*/
 }
 
 .submenu {
+    position: absolute;
+    z-index: 1;
     animation: animacao1 0.3s ease-in; /*Animação do submenu*/
     display: none;
     background-color: var(--cor05);
@@ -204,7 +206,8 @@ li { /* Para listas no geral*/
 /*Fim das configurações do header*/
 
 main {
-    height: 100vh;
+    z-index: 0;
+    height: 1000px;
     background-image: url(../imagens/design-g5cdc793df_1280.png);
     background-position: center ;
     background-size: cover;
