@@ -23,6 +23,7 @@
 }
 
 body {
+    overflow-x: hidden;
     width: 98vw;
     background-color: var(--cor05);
 }
@@ -32,9 +33,10 @@ body {
 /*Fim das configurações do header*/
 
 main {
+    height: 800px;
     z-index: 0;
     background-image: url(../imagens/design-g5cdc793df_1280.png);
-    background-position: center center ;
+    background-position: center ;
     background-size: cover;
 }
 
@@ -43,7 +45,8 @@ main {
     text-align: center;
     color: white;
     font-family: var(--fonte01);
-    width: 1000px;
+    width: 80%;
+    font-size: 1.2em;
     margin: auto;
     pointer-events: none;
 }

@@ -23,7 +23,8 @@
 }
 
 body {
-    width: 98vw;
+    width: 100vw;
+    overflow-x: hidden;
     background-color: var(--cor05);
 }
 
@@ -35,16 +36,15 @@ body {
 /*Início das configurações do main*/
 
 main { /*Parte principal do site*/
-    background-color: rgb(247, 247, 247);
-    height: 1000px;
-    
+    background-color: rgb(247, 247, 247);    
+    width: 100vw;
 }
 
 .parte-esquerda-slogan { /*Configuração da parte onde o slogan aparece */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50vw;
+    width: 98vw;
     height: 600px;
     border-bottom: 8px solid var(--cor05);
 }   
@@ -65,24 +65,19 @@ main { /*Parte principal do site*/
 }
 
 .parte-direita-slogan { /*Configuração da imagem ao lado do slogan */
-    display: flex;
-    height: 600px;
-    width: 49vw;
-    background-image: url(../imagens/social-media-g92be9e10f_1280.png);
-    background-size: cover;
-    border-bottom: 8px solid var(--cor05);
+    display: none;
 }
 
 .parte-cima-main {
     display: flex;
-    background-color: white;
 }
+
 
 .cursos-quadrados { /*Parte geral da seção*/
     display: flex;
     flex-direction: column;
     background-color: var(--cor05);
-    width: 98.75vw;
+    width: 100vw;
 }
 
 .quadrados { /*Configura cada quadrado*/
@@ -100,14 +95,14 @@ main { /*Parte principal do site*/
 
 .quadrados > img { /* Logo de cada linguagem*/
     align-self: center;
-    width: 90px;
+    width: 60px;
 }
 
 .quadrados > p { /*Texto sobre cada linguagem*/
     padding-top: 10px;
     padding: 5px;
     text-align: justify;
-    font-size: 1.2em;
+    font-size: 0.8em;
     font-family: var(--fonte05);
     margin-right: 20px;
     margin-left: 27px;
@@ -135,7 +130,7 @@ main { /*Parte principal do site*/
 }
 
 .obanai { /* Obanai de cria*/
-    height: 300px;
+    height: 180px;
 }
 
 .parte-linguagem-direita, .parte-linguagem-esquerda { /*Deixa o personagem e as informações na mesma linha*/
