@@ -149,7 +149,7 @@ body {
     color: white;
     font-weight: bolder;
     font-size: 1.3em;
-    border-radius: 40%;
+    border-radius: 40px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -292,7 +292,7 @@ main { /*Parte principal do site*/
     height: 350px;
     width: 60%;
     background-color: white;
-    border-radius: 50%;
+    border-radius: 150px;
     box-shadow: 2px 2px 2px rgb(255, 255, 255);
 }
 
