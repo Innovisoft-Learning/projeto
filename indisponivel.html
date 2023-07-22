@@ -5,45 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Não disponível</title>
     <link rel="stylesheet" href="estilos/indisponivel.css">
+    <link rel="stylesheet" href="/arquivos-compartilhados/header.css">
     <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
 </head>
 <body>
-    <header class="header">
-        <div class="parte-cima-header">
-            <div class="nome-logo">
-                <img src="imagens/logo.png" alt="Logo" class="logo">
-                <h1><a href="index.html">Codenect</a></h1>
-            </div>
-            <div class="parte-direita-header">
-                <div class="search-box">
-                    <button class="btn-search"><i class="fas fa-search"></i></button>
-                    <input type="text" class="input-search" placeholder="Pesquisar">
-                  </div>
-                    <input type="button" value="Começar"  class="botao-comece">
-            </div>
-        </div>
-        <nav class="parte-baixo-header">
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li class="cursos-nav">
-                    <p>Linguagens</p>
-                    <ul class="submenu">
-                        <li><a href="indisponivel.html">Python</a></li>
-                        <li><a href="indisponivel.html">C++</a></li>
-                        <li><a href="indisponivel.html">Java</a></li>
-                        <li><a href="indisponivel.html">Php</a></li>
-                    </ul>
-                </li>
-                <li><a href="indisponivel.html">Comunidade</a></li>
-                <li><a href="indisponivel.html">Ranking</a></li>
-                <li><a href="indisponivel.html">Vip</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header-placeholder">
+
+    </div>
 
     <main>
         <h1 class="mensagem">Este conteúdo ainda não está disponível, mantenha conectado para acompanhar atualizações futuras...</h1>
     </main>
-
+    <script>
+        // Carrega o conteúdo do header.html e insere no elemento com o ID 'header-placeholder'
+        fetch('/arquivos-compartilhados/header.html')
+            .then(response => response.text())
+            .then(content => {
+                const headerPlaceholder = document.getElementById('header-placeholder');
+                headerPlaceholder.innerHTML = content;
+            });
+    </script>
 </body>
 </html>
