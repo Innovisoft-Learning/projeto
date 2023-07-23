@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .then(content => {
           const headerPlaceholder = document.getElementById('header-placeholder');
           headerPlaceholder.innerHTML = content;
-
+        if (window.screen.width > 749) {
           // JavaScript para ocultar e exibir o dropdown
           const dropdownTrigger = document.querySelector(".cursos-nav");
           const dropdown = document.querySelector(".submenu");
@@ -29,6 +29,38 @@ document.addEventListener("DOMContentLoaded", function () {
               dropdownTrigger.addEventListener("mouseout", function () {
                   dropdown.style.display = "none";
               });
-          }
+          }}
+        else {
+            isubmenu.style.display = 'none'
+        }
       });
+
 });
+
+function mostrar() {
+    if (imenu.style.display == 'flex') {
+        imenu.style.display = 'none'
+    }
+
+    else {
+        imenu.style.display = 'flex'
+    }
+    
+}
+
+function mostrarsubmenu(){
+    console.log(isubmenu.style.display)
+    if (window.screen.width > 749) {
+        
+    }
+    else {
+        if (isubmenu.style.display == 'none') {
+            isubmenu.style.display ='block'
+            expandspan.style.animation = 'animacao2 0.5s forwards'
+        }
+        else {
+            expandspan.style.animation = 'animacao3 0.5s forwards'
+            isubmenu.style.display = 'none'
+        }
+    }
+}

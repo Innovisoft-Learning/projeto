@@ -189,14 +189,28 @@ li { /* Para listas no geral*/
     color: rgb(218, 218, 218);
     font-family: var(--fonte01);
     text-shadow: 1px 1px 1px black;
-    display: block;
+    display: flex;
     width: 130px;
     text-align: center;
+    align-items: center;
 }
 
 .cursos-nav:hover > .submenu { /*Aparecer o submenu quando passar por cima de cursos*/
     display: block;
     background-color: var(--cor05);
+}
+
+@keyframes animacao2 {
+    from { 
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(3.142rad);
+    }
+}
+
+.cursos-nav:hover > p > span {
+    animation: animacao2 0.5s forwards;
 }
 
 @keyframes animacao1 { /*Para criar a animacao1 usada abaixo*/
@@ -229,3 +243,4 @@ li { /* Para listas no geral*/
 .submenu > li > a:hover { /*Quando passar o mouse por cima de cada curso*/
     text-decoration: underline;
 } 
+
