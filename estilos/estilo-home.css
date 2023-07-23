@@ -25,6 +25,7 @@
 body {
     width: 98vw;
     background-color: var(--cor05);
+    overflow-x: hidden;
 }
 
 /*Começo da cofiguração do header*/

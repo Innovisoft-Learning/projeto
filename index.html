@@ -78,14 +78,6 @@
         </section>
     </main>    
     <script src="js-home.js"></script>
-    <script>
-        // Carrega o conteúdo do header.html e insere no elemento com o ID 'header-placeholder'
-        fetch('arquivos-compartilhados/header.html')
-            .then(response => response.text())
-            .then(content => {
-                const headerPlaceholder = document.getElementById('header-placeholder');
-                headerPlaceholder.innerHTML = content;
-            });
-    </script>
+    <script src="arquivos-compartilhados/js-header.js"></script>
 </body>
 </html>
