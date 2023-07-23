@@ -36,7 +36,7 @@ body {
 
 main { /*Parte principal do site*/
     background-color: rgb(247, 247, 247);
-    height: 1000px;
+    height: 1500px;
     
 }
 
@@ -44,7 +44,7 @@ main { /*Parte principal do site*/
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50vw;
+    width: 50%;
     height: 600px;
     border-bottom: 8px solid var(--cor05);
 }   
@@ -67,7 +67,7 @@ main { /*Parte principal do site*/
 .parte-direita-slogan { /*Configuração da imagem ao lado do slogan */
     display: flex;
     height: 600px;
-    width: 49vw;
+    width: 50%;
     background-image: url(../imagens/social-media-g92be9e10f_1280.png);
     background-size: cover;
     border-bottom: 8px solid var(--cor05);
@@ -75,7 +75,8 @@ main { /*Parte principal do site*/
 
 .parte-cima-main {
     display: flex;
-    background-color: white;
+    background-color: rgb(247, 247, 247);
+    width: 98.90vw;
 }
 
 .cursos-quadrados { /*Parte geral da seção*/
@@ -91,11 +92,11 @@ main { /*Parte principal do site*/
     flex-direction: column;
     margin: 20px;
     padding: 10px;
-    height: 350px;
+    height: 420px;
     width: 60%;
-    background-color: white;
+    background-color: var(--cor02);
     border-radius: 150px;
-    box-shadow: 2px 2px 2px rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px var(--cor01);
 }
 
 .quadrados > img { /* Logo de cada linguagem*/
@@ -107,19 +108,28 @@ main { /*Parte principal do site*/
     padding-top: 10px;
     padding: 5px;
     text-align: justify;
-    font-size: 1.2em;
+    text-indent: 50px;
+    font-size: 1.8em;
     font-family: var(--fonte05);
     margin-right: 20px;
     margin-left: 27px;
+    color: var(--cor0);
+}
+
+.linguas {
+    color: var(--cor03);
+    font-style: italic;
+    font-weight: 800;
+    font-size: 1.4em;
 }
 
 .quadrados > a { /*Link de vamos começar*/
     padding-top: 10px;
     align-self: center;
-    color: var(--cor01);
+    color: var(--cor03);
     text-decoration: none;
-    font-size: 1.5em;
-    font-family: var(--fonte05);
+    font-size: 1.8em;
+    font-family: var(--fonte01);
 }
 
 .quadrados > a:hover {
