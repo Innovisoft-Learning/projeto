@@ -35,6 +35,7 @@ body {
 main {
     height: 800px;
     z-index: 0;
+    width: 100vw;
     background-image: url(../imagens/design-g5cdc793df_1280.png);
     background-position: center ;
     background-size: cover;
