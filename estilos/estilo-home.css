@@ -36,9 +36,7 @@ body {
 /*Início das configurações do main*/
 
 main { /*Parte principal do site*/
-    background-color: rgb(247, 247, 247);
-    height: 1500px;
-    
+    background-color: rgb(247, 247, 247);    
 }
 
 .parte-esquerda-slogan { /*Configuração da parte onde o slogan aparece */
@@ -88,6 +86,7 @@ main { /*Parte principal do site*/
 }
 
 .quadrados { /*Configura cada quadrado*/
+    position: relative;
     visibility: hidden;
     display: flex;
     flex-direction: column;
@@ -110,7 +109,7 @@ main { /*Parte principal do site*/
     padding: 5px;
     text-align: justify;
     text-indent: 50px;
-    font-size: 1.8em;
+    font-size: clamp(1.2em, 1.8vw, 1.7em);
     font-family: var(--fonte05);
     margin-right: 20px;
     margin-left: 27px;
@@ -125,11 +124,10 @@ main { /*Parte principal do site*/
 }
 
 .quadrados > a { /*Link de vamos começar*/
-    padding-top: 10px;
     align-self: center;
     color: var(--cor03);
     text-decoration: none;
-    font-size: 1.8em;
+    font-size: clamp(1.5em, 2vw, 2em);
     font-family: var(--fonte01);
 }
 

@@ -101,8 +101,8 @@ main { /*Parte principal do site*/
 .quadrados > p { /*Texto sobre cada linguagem*/
     padding-top: 10px;
     padding: 5px;
-    text-align: justify;
-    font-size: 0.8em;
+    text-align: center;
+    font-size: clamp(0.7em, 2vw, 1.8em);
     font-family: var(--fonte05);
     margin-right: 20px;
     margin-left: 27px;
@@ -113,7 +113,7 @@ main { /*Parte principal do site*/
     align-self: center;
     color: var(--cor01);
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: clamp(0.7em, 3vw, 1.5em);
     font-family: var(--fonte05);
 }
 
