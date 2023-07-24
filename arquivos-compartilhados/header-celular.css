@@ -111,7 +111,7 @@ body {
 }
 
 .btn-search {
-    width: 50px;
+    width: 45px;
     height: 30px;
     border-style: none;
     font-size: 20px;
@@ -127,7 +127,7 @@ body {
 }
 
 .btn-search:focus ~ .input-search {
-    width: 300px;
+    width: 45px;
     border-radius: 0px;
     background-color: transparent;
     border-bottom:1px solid rgba(255,255,255,.5);
@@ -135,7 +135,7 @@ body {
 }
 
 .input-search:focus {
-    width: 80px;
+    width: 45px;
     border-radius: 0px;
     background-color: transparent;
     border-bottom:1px solid rgba(255,255,255,.5);

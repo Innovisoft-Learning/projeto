@@ -23,6 +23,7 @@
 }
 
 body {
+    overflow-x: hidden;
     width: 98vw;
     background-color: var(--cor05);
 }
@@ -32,7 +33,9 @@ body {
 /*Fim das configurações do header*/
 
 main {
+    height: 1000px;
     z-index: 0;
+    width: 100vw;
     background-image: url(../imagens/design-g5cdc793df_1280.png);
     background-position: center center ;
     background-size: cover;

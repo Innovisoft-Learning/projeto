@@ -224,9 +224,10 @@ li { /* Para listas no geral*/
     animation: animacao1 0.3s ease-in; /*Animação do submenu*/
     display: none;
     background-color: var(--cor05);
-    width: 130px;
+    width: 180px;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
+    transform: translate(-10px);
 }
 
 .submenu > li > a { /*Configurando os cursos no submenu*/
