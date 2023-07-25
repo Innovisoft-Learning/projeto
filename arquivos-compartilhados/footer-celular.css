@@ -100,3 +100,30 @@ body {
     font-family: var(--fonte05);
 }
 
+
+.redes {
+    display: flex;
+    justify-content: start;
+    background-color: black;
+}
+
+.icones-redes {
+    color: white;
+    font-size: 2em;
+    margin: 10px;
+}
+
+@keyframes animacao4 {
+    from {
+        color: white;
+    }
+
+    to {
+        color: var(--cor04);
+        text-shadow: 0px 0px 5px var(--cor04);
+    }
+}
+
+.icones-redes:hover {
+    animation: animacao4 0.5s forwards;
+}
