@@ -28,6 +28,8 @@ body {
 }
 
 .footer {
+    display: flex;
+    flex-direction: column;
     background-color: black;
     height: 60vh;
     width: 100vw;
@@ -120,4 +122,10 @@ body {
 
 .icones-redes:hover {
     animation: animacao4 0.5s forwards;
+}
+
+.parte-final-footer {
+    margin-top: 60px;
+    color: white;
+    align-self: center;
 }
