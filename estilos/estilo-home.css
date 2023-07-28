@@ -5,7 +5,7 @@
 
 :root {
     --cor01: #4E3E90;
-    --cor02: #2934ce;
+    --cor02: #C1C3DF;
     --cor03: #4A77F3;
     --cor04: #46FFFF;
     --cor05: #06032b;
@@ -94,11 +94,10 @@ main { /*Parte principal do site*/
     padding: 10px;
     height: 420px;
     width: 60%;
-    background-color: var(--cor02);
+    background-color: var(--cor03);
     border-radius: 150px;
-    box-shadow: 2px 2px 2px var(--cor01);
     border: 7px solid transparent;
-    background: linear-gradient(var(--cor02), var(--cor02)) padding-box, linear-gradient(45deg, var(--cor04), darkblue) border-box;
+    background: linear-gradient(var(--cor01), var(--cor01)) padding-box, linear-gradient(180deg, var(--cor04), var(--cor04)) border-box;
 }
 
 .quadrados > img { /* Logo de cada linguagem*/
@@ -115,11 +114,11 @@ main { /*Parte principal do site*/
     font-family: var(--fonte05);
     margin-right: 20px;
     margin-left: 27px;
-    color: var(--cor0);
+    color: white;
 }
 
 .linguas {
-    color: var(--cor03);
+    color: var(--cor04);
     font-style: italic;
     font-weight: 800;
     font-size: 1.4em;
@@ -127,7 +126,7 @@ main { /*Parte principal do site*/
 
 .quadrados > a { /*Link de vamos começar*/
     align-self: center;
-    color: var(--cor03);
+    color: var(--cor04);
     text-decoration: none;
     font-size: clamp(1.5em, 2vw, 2em);
     font-family: var(--fonte01);
@@ -180,7 +179,7 @@ main { /*Parte principal do site*/
     margin: 20px;
     width: 80vw;
     height: 40vh;
-    border: 2px solid black;
+    border: 2px solid var(--cor04);
     border-radius: 30px 0px;
 }
 
@@ -202,6 +201,7 @@ main { /*Parte principal do site*/
     font-family: var(--fonte02);
     font-size: 2em;
     text-align: center;
+    color: var(--cor05);
 }
 
 .funcao > .parte-esquerda-funcao > .titulo-funcao > .icone {
@@ -212,6 +212,7 @@ main { /*Parte principal do site*/
     text-indent: 30px;
     text-align: justify;
     font-size: 1.5em;
+    color: var(--cor01);
 }
 
 .parte-direita-funcao-conexao {

@@ -96,7 +96,7 @@ main { /*Parte principal do site*/
 .quadrados > img { /* Logo de cada linguagem*/
     align-self: center;
     width: 60px;
-}
+}   
 
 .quadrados > p { /*Texto sobre cada linguagem*/
     padding-top: 10px;
