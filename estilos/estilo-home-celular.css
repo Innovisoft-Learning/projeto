@@ -46,7 +46,6 @@ main { /*Parte principal do site*/
     justify-content: center;
     width: 98vw;
     height: 600px;
-    border-bottom: 8px solid var(--cor05);
 }   
 
 .parte-esquerda-slogan > h1, h2 { /*Configuração dos titulos do slogan */
@@ -90,7 +89,8 @@ main { /*Parte principal do site*/
     width: 60%;
     background-color: white;
     border-radius: 150px;
-    box-shadow: 2px 2px 2px rgb(255, 255, 255);
+    border: 2px solid transparent;
+    background: linear-gradient(var(--cor02), var(--cor02)) padding-box, linear-gradient(45deg, var(--cor04), darkblue) border-box;
 }
 
 .quadrados > img { /* Logo de cada linguagem*/
@@ -109,7 +109,6 @@ main { /*Parte principal do site*/
 }
 
 .quadrados > a { /*Link de vamos começar*/
-    padding-top: 10px;
     align-self: center;
     color: var(--cor01);
     text-decoration: none;

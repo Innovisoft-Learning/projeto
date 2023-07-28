@@ -42,6 +42,7 @@ main {
 }
 
 .mensagem {
+    padding-top: 10px;
     z-index: 0;
     text-align: center;
     color: white;

@@ -23,7 +23,7 @@
 }
 
 body {
-    width: 98vw;
+    width: 100vw;
     background-color: var(--cor05);
     overflow-x: hidden;
 }
@@ -75,7 +75,7 @@ main { /*Parte principal do site*/
 .parte-cima-main {
     display: flex;
     background-color: rgb(247, 247, 247);
-    width: 98.90vw;
+    width: 100vw;
 }
 
 .cursos-quadrados { /*Parte geral da seção*/
@@ -97,6 +97,8 @@ main { /*Parte principal do site*/
     background-color: var(--cor02);
     border-radius: 150px;
     box-shadow: 2px 2px 2px var(--cor01);
+    border: 7px solid transparent;
+    background: linear-gradient(var(--cor02), var(--cor02)) padding-box, linear-gradient(45deg, var(--cor04), darkblue) border-box;
 }
 
 .quadrados > img { /* Logo de cada linguagem*/
