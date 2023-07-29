@@ -22,6 +22,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
 body {
     width: 100vw;
     overflow-x: hidden;

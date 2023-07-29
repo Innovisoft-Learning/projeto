@@ -16,6 +16,11 @@
     --fonte05: 'Source Code Pro', monospace;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 140px;
+}
+
 * {
     margin: 0px;
     padding: 0px;
