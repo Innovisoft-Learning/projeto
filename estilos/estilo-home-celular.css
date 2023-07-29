@@ -53,7 +53,7 @@ main { /*Parte principal do site*/
     height: 600px;
 }   
 
-.parte-esquerda-slogan > h1, h2 { /*Configuração dos titulos do slogan */
+.parte-esquerda-slogan > h1, .parte-esquerda-slogan > h2 { /*Configuração dos titulos do slogan */
     font-family: var(--fonte04);
     color: var(--cor05);
     text-align: center;

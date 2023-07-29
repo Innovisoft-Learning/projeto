@@ -18,7 +18,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 140px;
+    scroll-padding-top: 150px;
 }
 
 * {
@@ -53,11 +53,50 @@ main { /*Parte principal do site*/
     border-bottom: 8px solid var(--cor05);
 }   
 
-.parte-esquerda-slogan > h1, h2 { /*Configuração dos titulos do slogan */
+.parte-esquerda-slogan > h2 {
     font-family: var(--fonte04);
     color: var(--cor05);
     text-align: center;
     font-size: 2em;
+}
+
+.parte-esquerda-slogan > h1 { /*Configuração dos titulos do slogan */
+    font-family: var(--fonte04);
+    color: var(--cor05);
+    text-align: center;
+    font-size: 2em;
+    white-space: nowrap;
+    animation: digitando 2.5s steps(35) alternate, piscando 0.5s steps(35) alternate infinite, sumir 0s 2.5s forwards;
+    overflow: hidden;
+    border-right: 4px solid;
+    width: 35ch;
+}
+
+
+@keyframes digitando {
+    from {
+        width: 0ch;
+    }
+
+    to {
+        width: 35ch;
+    }
+}
+
+@keyframes piscando {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes sumir {
+    from {
+        border-color: var(--cor05);
+    }
+
+    to {
+        border-color: transparent;
+    }
 }
 
 .parte-esquerda-slogan > p { /*Configuração do parágrafo do slogan */
