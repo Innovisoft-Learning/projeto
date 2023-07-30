@@ -169,7 +169,7 @@ body {
     padding: 10px;
 }
 
-li { /* Para listas no geral*/
+ul.menu > li { /* Para listas no geral*/
     list-style: none;
     font-size: 1.3em;
 }
@@ -224,6 +224,7 @@ li { /* Para listas no geral*/
 }
 
 .submenu {
+    list-style: none;
     position: absolute;
     z-index: 1;
     animation: animacao1 0.3s ease-in; /*Animação do submenu*/

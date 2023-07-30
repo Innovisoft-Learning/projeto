@@ -245,18 +245,20 @@ main { /*Parte principal do site*/
     font-family: var(--fonte02);
     font-size: 2em;
     text-align: center;
-    color: var(--cor05);
+    color: var(--cor03);
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.489);
+
 }
 
 .funcao > .parte-esquerda-funcao > .titulo-funcao > .icone {
     font-size: 3em;
 }
 
-.funcao > .parte-esquerda-funcao > p {
-    text-indent: 30px;
-    text-align: justify;
-    font-size: 1.5em;
+.funcao > .parte-esquerda-funcao > ul > li {
+    margin: 15px 20px;
+    font-size: 1.75em;
     color: var(--cor01);
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.489);
 }
 
 .parte-direita-funcao-conexao {
