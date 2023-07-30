@@ -80,7 +80,7 @@ main { /*Parte principal do site*/
 .cursos-quadrados { /*Parte geral da seção*/
     display: flex;
     flex-direction: column;
-    background-color: var(--cor05);
+    background-image: linear-gradient(to bottom, var(--cor05), #3865CB);
     width: 100vw;
 }
 
@@ -152,7 +152,7 @@ main { /*Parte principal do site*/
 /* Funções do site*/
 
 .funcionalidades {
-    background: white url(../imagens/placa-mae.jpg) center center fixed;
+    background: white url(../imagens/fundo-placa-mãe.jpg) center center fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
