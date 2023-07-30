@@ -6,6 +6,15 @@ document.addEventListener("DOMContentLoaded", function () {
       .then(content => {
           const headerPlaceholder = document.getElementById('header-placeholder');
           headerPlaceholder.innerHTML = content;
+          if (isHomePage()){
+            console.log('s')
+            alternar_href("ilinkpython", "#ipython")
+            alternar_href("ilinkc", "#ic++")
+            alternar_href("ilinkjava", "#ijava")
+            alternar_href("ilinkphp", "#iphp")
+            alternar_href("ilinkconexoes", "#iconexoes")
+            alternar_href("ilinkrank", "#irank")
+        }
         if (window.screen.width > 749) {
           // JavaScript para ocultar e exibir o dropdown
           const dropdownTrigger = document.querySelector(".cursos-nav");
@@ -37,6 +46,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+function isHomePage() {
+    return window.location.pathname.endsWith("index.html");
+}
+
+function alternar_href(id_elemento, href_novo){
+    let id_elemento_var = document.getElementById(id_elemento);
+    console.log(id_elemento_var)
+    id_elemento_var.href = href_novo;
+
+}
+
+  
 function mostrar() {
     if (imenu.style.display == 'flex') {
         imenu.style.display = 'none'
@@ -49,7 +70,6 @@ function mostrar() {
 }
 
 function mostrarsubmenu(){
-    console.log(isubmenu.style.display)
     if (window.screen.width > 749) {
         
     }
