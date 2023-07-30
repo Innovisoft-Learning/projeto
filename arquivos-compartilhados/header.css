@@ -241,7 +241,7 @@ ul.menu > li { /* Para listas no geral*/
     color: white;
     font-family: var(--fonte01);
     text-shadow: 1px 1px 1px black;
-    font-size: 0.9em;
+    font-size: 1.2em;
     text-decoration: none;
     height: 60px;
     text-align: center;

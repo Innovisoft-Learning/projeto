@@ -80,12 +80,13 @@ body {
 
 .inf > li > h4 {
     color: white;
+    font-size: 1em;
 }
 
 .inf > li > h4 > a {
     color: white;
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 1em;
     font-family: var(--fonte05);
 }
 

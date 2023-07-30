@@ -192,8 +192,12 @@ main { /*Parte principal do site*/
     font-size: 3em;
 }
 
-.funcao > .parte-esquerda-funcao > p {
-    text-indent: 30px;
+.funcao > .parte-esquerda-funcao > ul {
+    list-style-position: inside;
+}
+
+.funcao > .parte-esquerda-funcao > ul > li {
+    text-indent: 20px;
     text-align: justify;
     font-size: 1.5em;
 }
