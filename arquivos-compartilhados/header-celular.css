@@ -178,7 +178,7 @@ body {
     justify-content: space-around;
 }
 
-li { /* Para listas no geral*/
+ul.menu > li { /* Para listas no geral*/
     list-style: none;
     font-size: 1.3em;
     background-color: var(--cor05);
