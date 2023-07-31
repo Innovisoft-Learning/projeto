@@ -130,6 +130,13 @@ main { /*Parte principal do site*/
     width: 100vw;
 }
 
+.cursos-quadrados > h1 {
+    color: white;
+    font-family: var(--fonte01);
+    font-size: 2em;
+    text-align: center;
+}
+
 .quadrados { /*Configura cada quadrado*/
     position: relative;
     visibility: hidden;
@@ -137,11 +144,10 @@ main { /*Parte principal do site*/
     flex-direction: column;
     margin: 20px;
     padding: 10px;
-    height: 420px;
     width: 60%;
     background-color: var(--cor03);
     border-radius: 150px;
-    border: 7px solid transparent;
+    border: 4px solid transparent;
     background: linear-gradient(var(--cor01), var(--cor01)) padding-box, linear-gradient(180deg, var(--cor04), var(--cor04)) border-box;
 }
 
@@ -163,22 +169,34 @@ main { /*Parte principal do site*/
 }
 
 .linguas {
-    color: var(--cor04);
-    font-style: italic;
-    font-weight: 800;
+    color: var(--cor03);
+    text-shadow: 0px 0px 2px #06032b;
+    font-family: var(--fonte01);
     font-size: 1.4em;
 }
 
-.quadrados > a { /*Link de vamos começar*/
+.quadrados > .btn-linguagem {
+    width: 50%;
+    cursor: pointer;
     align-self: center;
-    color: var(--cor04);
-    text-decoration: none;
-    font-size: clamp(1.5em, 2vw, 2em);
     font-family: var(--fonte01);
+    background-color: #3865CB;
+    font-size: 1.5em;
+    border-radius: 100px;
+    color: var(--cor05);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.664);
+    border: none;
 }
 
-.quadrados > a:hover {
-    text-decoration: underline;
+.quadrados > .btn-linguagem:hover {
+    animation: hover-linguagem 0.6s forwards;
+}
+
+@keyframes hover-linguagem {
+    100% {
+        background-color: #02001a;
+        color: white;
+    }
 }
 
 .q-esquerda { /*deixa a div na esquerda*/
