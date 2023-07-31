@@ -31,7 +31,6 @@ body {
     display: flex;
     flex-direction: column;
     background-color: black;
-    height: 60vh;
     width: 100vw;
 }
 
@@ -129,4 +128,5 @@ body {
     margin-top: 60px;
     color: white;
     align-self: center;
+    margin-bottom: 30px;
 }

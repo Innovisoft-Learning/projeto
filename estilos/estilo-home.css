@@ -48,6 +48,7 @@ main { /*Parte principal do site*/
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 50%;
     height: 600px;
     border-bottom: 8px solid var(--cor05);
@@ -222,7 +223,6 @@ main { /*Parte principal do site*/
     padding: 18px;
     margin: 20px;
     width: 80vw;
-    height: 40vh;
     border: 2px solid var(--cor04);
     border-radius: 30px 0px;
 }
@@ -263,14 +263,14 @@ main { /*Parte principal do site*/
 
 .parte-direita-funcao-conexao {
     width: 40%;
-    height: 35vh;
     background-image: url(../imagens/conexoes.jpg);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .parte-direita-funcao-rank {
     width: 40%;
-    height: 40vh;
     background-image: url(../imagens/rank.jpg);
     background-size: contain;
     background-repeat: no-repeat;
