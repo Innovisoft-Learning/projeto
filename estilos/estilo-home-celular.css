@@ -82,6 +82,8 @@ main { /*Parte principal do site*/
     flex-direction: column;
     background-image: linear-gradient(to bottom, var(--cor05), #3865CB);
     width: 100vw;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .cursos-quadrados > h1 {
@@ -97,12 +99,11 @@ main { /*Parte principal do site*/
     flex-direction: column;
     margin: 20px;
     padding: 10px;
-    height: 350px;
-    width: 60%;
+    width: 80%;
     background-color: white;
-    border-radius: 150px;
+    border-radius: 100px;
     border: 2px solid transparent;
-    background: linear-gradient(var(--cor02), var(--cor02)) padding-box, linear-gradient(45deg, var(--cor04), darkblue) border-box;
+    background: linear-gradient(var(--cor01), var(--cor01)) padding-box, linear-gradient(45deg, var(--cor04), darkblue) border-box;
 }
 
 
@@ -114,7 +115,7 @@ main { /*Parte principal do site*/
 }
 
 .quadrados > .btn-linguagem {
-    width: 100%;
+    width: 60%;
     cursor: pointer;
     align-self: center;
     font-family: var(--fonte01);
@@ -137,43 +138,38 @@ main { /*Parte principal do site*/
     }
 }
 
-.quadrados > img { /* Logo de cada linguagem*/
+.quadrados > .img-logo-linguagem { /* Logo de cada linguagem*/
     align-self: center;
     width: 60px;
 }   
 
 .quadrados > p { /*Texto sobre cada linguagem*/
+    color: white;
+    line-height: 1.75em;
     padding-top: 10px;
     padding: 5px;
-    text-align: center;
-    font-size: clamp(0.7em, 2vw, 1.8em);
+    text-align: justify;
+    font-size: 1em;
     font-family: var(--fonte05);
-    margin-right: 20px;
-    margin-left: 27px;
-}
-
-.q-esquerda { /*deixa a div na esquerda*/
-    align-self: flex-start;
-}
-
-.q-direita { /*deixa a div na direita*/
-    align-self: flex-end;
-}
-
-.obanai { /* Obanai de cria*/
-    height: 180px;
-}
-
-.parte-linguagem-direita, .parte-linguagem-esquerda { /*Deixa o personagem e as informações na mesma linha*/
-    display: flex;
-}
-
-.parte-linguagem-direita { /*Inverte o persoagem e a informação para intercalar*/
-    flex-direction: row-reverse;
+    margin: 10px;
 }
 
 .p-esquerdo, .p-direito { /*alinha o personagem à div*/
+    display: none;
+}
+
+.parte-linguagem-esquerda, .parte-linguagem-direita {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-celular {
+    height: 180px;
+    width: 180px;
     align-self: center;
+    margin-bottom: 20px;
 }
 
 /* Funções do site*/

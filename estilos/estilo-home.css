@@ -151,7 +151,7 @@ main { /*Parte principal do site*/
     background: linear-gradient(var(--cor01), var(--cor01)) padding-box, linear-gradient(180deg, var(--cor04), var(--cor04)) border-box;
 }
 
-.quadrados > img { /* Logo de cada linguagem*/
+.quadrados > .img-logo-linguagem { /* Logo de cada linguagem*/
     align-self: center;
     width: 90px;
 }
@@ -197,6 +197,10 @@ main { /*Parte principal do site*/
         background-color: #02001a;
         color: white;
     }
+}
+
+.img-celular {
+    display: none;
 }
 
 .q-esquerda { /*deixa a div na esquerda*/
