@@ -298,3 +298,63 @@ main { /*Parte principal do site*/
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+/* Fim Funções do site
+
+/* Início Seção Sobre Nós */
+.sobre-nos { /* class principal da seção */
+    background-image: linear-gradient(to top, var(--cor05), #3865CB);
+}
+
+.sobre-nos > h1 { /* título da seção */
+    text-align: center;
+    color: white;
+    font-family: var(--fonte01);
+    font-size: 2em;
+}
+
+.parte-sobre-nos { /* container */
+    width: 100vw;
+    height: 500px;
+}
+
+.parte-cima-sobre-nos {
+    display: flex;
+    flex-direction: row;
+}
+
+.texto-sobre-nos {
+    background-color: darkgray;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-sobre-nos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.foto-sobre-nos > img {
+    width: 75%;
+    height: 75%;
+    border-radius: 20px;
+    box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.585);
+    background-size: cover;
+}
+
+.texto-sobre-nos p {
+    font-family: var(--fonte05);
+}
+
+.parte-baixo-sobre-nos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 50px;
+}
+/* Fim Seção Sobre Nós */
