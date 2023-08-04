@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
           const headerPlaceholder = document.getElementById('header-placeholder');
           headerPlaceholder.innerHTML = content;
           if (isHomePage()){
-            console.log('s')
             alternar_href("ilinkpython", "#ipython")
             alternar_href("ilinkc", "#ic++")
             alternar_href("ilinkjava", "#ijava")
