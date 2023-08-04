@@ -149,17 +149,18 @@ main { /*Parte principal do site*/
     font-size: 1.4em;
 }
 
-.quadrados > .btn-linguagem {
+.quadrados > .btn-linguagem {    
     width: 50%;
     cursor: pointer;
     align-self: center;
     font-family: var(--fonte01);
     background-color: #3865CB;
+    background-image: linear-gradient(45deg, var(--cor03), var(--cor04));
     font-size: 1.5em;
+    border: none;
     border-radius: 100px;
     color: var(--cor05);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.664);
-    border: none;
 }
 
 .quadrados > .btn-linguagem:hover {
@@ -169,6 +170,7 @@ main { /*Parte principal do site*/
 @keyframes hover-linguagem {
     100% {
         background-color: #02001a;
+        background-image: none;
         color: white;
     }
 }

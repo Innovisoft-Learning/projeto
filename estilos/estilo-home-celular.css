@@ -95,6 +95,7 @@ main { /*Parte principal do site*/
     align-self: center;
     font-family: var(--fonte01);
     background-color: #3865CB;
+    background-image: linear-gradient(45deg, var(--cor03), var(--cor04));
     font-size: 1em;
     border-radius: 100px;
     color: var(--cor05);
@@ -109,6 +110,7 @@ main { /*Parte principal do site*/
 @keyframes hover-linguagem {
     100% {
         background-color: #02001a;
+        background-image: none;
         color: white;
     }
 }
