@@ -41,6 +41,33 @@ main { /*Parte principal do site*/
     font-weight: bold;
 }
 
+.parte-esquerda-slogan > button {
+    cursor: pointer;
+    align-self: center;
+    font-family: var(--fonte01);
+    background-color: #3865CB;
+    background-image: linear-gradient(45deg, var(--cor03), var(--cor04));
+    font-size: 1em;
+    border: none;
+    border-radius: 100px;
+    color: var(--cor05);
+    box-shadow: 6px 5px 14px rgba(0, 0, 0, 0.673);
+    margin-top: 20px;
+}
+
+.parte-esquerda-slogan a {
+    display: block;
+    text-decoration: none;
+    font-family: var(--fonte01);
+    color: var(--cor05);
+    border-radius: 100px;
+    padding: 2px 5px;
+}
+
+.parte-esquerda-slogan a:hover {
+    animation: hover-linguagem 0.6s forwards;
+}
+
 .parte-direita-slogan { /*Configuração da imagem ao lado do slogan */
     display: none;
 }
@@ -216,3 +243,118 @@ main { /*Parte principal do site*/
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+/*Inicio da sessão sobre nós*/
+.sobre-nos { /* class principal da seção */
+    background-image: linear-gradient(to top, var(--cor05), #3865CB);
+}
+
+.sobre-nos > h1 { /* título da seção */
+    text-align: center;
+    color: white;
+    font-family: var(--fonte01);
+    font-size: 2em;
+}
+
+.parte-sobre-nos { /* container */
+    width: 100vw;
+}
+
+.parte-cima-sobre-nos {
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-sobre-nos {
+    background-color: transparent;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-sobre-nos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.foto-sobre-nos > img {
+    width: 75%;
+    height: 75%;
+    border-radius: 20px;
+    box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.585);
+    background-size: cover;
+    border: 2px solid black;
+}
+
+.texto-sobre-nos p {
+    font-family: var(--fonte05);
+    color: white;
+    text-align: justify;
+    font-size: 1.5em;
+    margin: 15px;
+}
+
+.parte-baixo-sobre-nos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: var(--cor04);
+    margin: 50px 0px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.473);
+}
+
+.card > img {
+    width: 100%;
+    border-start-end-radius: 7px;
+    border-start-start-radius: 7px;
+    align-self: center;
+}
+
+.card > hr {
+    width: 100%;
+    border: 1px solid black;
+    margin: 0px;
+}
+
+.card-corpo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4E3E90;
+    color: white;
+    border-end-start-radius: 7px;
+    border-end-end-radius: 7px;
+}
+
+.card-corpo > h4 {
+    font-size: 1.2em;
+    margin: 5px;
+    font-family: var(--fonte04);
+    text-align: center;
+}
+
+.card-corpo > ul {
+    list-style-type: none;
+}
+
+.card-corpo > ul > li {
+    margin: 5px;
+    font-family: var(--fonte02);
+}
+
+/*Fim da sesão sobre nós*/
