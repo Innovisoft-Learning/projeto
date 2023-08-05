@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url(estilo-base.css);
 
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 150px;
@@ -28,6 +29,37 @@ main { /*Parte principal do site*/
     border-bottom: 8px solid var(--cor05);
 }   
 
+.parte-esquerda-slogan > button {
+    width: 227px;
+    cursor: pointer;
+    align-self: center;
+    font-family: var(--fonte01);
+    background-color: #3865CB;
+    background-image: linear-gradient(45deg, var(--cor03), var(--cor04));
+    font-size: 1.3em;
+    border: none;
+    border-radius: 100px;
+    color: var(--cor05);
+    box-shadow: 6px 5px 14px rgba(0, 0, 0, 0.673);
+    margin-top: 20px;
+}
+
+.parte-esquerda-slogan a {
+    display: block;
+    text-decoration: none;
+    font-family: var(--fonte01);
+    color: var(--cor05);
+    border-radius: 100px;
+}
+
+.parte-esquerda-slogan a:hover {
+    animation: hover-linguagem 0.6s forwards;
+}
+
+.parte-esquerda-slogan > button:hover {
+    animation: hover-linguagem 0.6s forwards;
+}
+
 .parte-esquerda-slogan > h2 {
     font-family: var(--fonte04);
     color: var(--cor05);
@@ -45,6 +77,26 @@ main { /*Parte principal do site*/
     overflow: hidden;
     border-right: 4px solid;
     width: 35ch;
+}
+
+@media screen and (min-width: 749px) and (max-width: 1400px) { /* titulo slogan ajuste */
+    .parte-esquerda-slogan > h1 {
+        animation: none;
+        width: 80%;
+        border-right: none;
+        overflow: visible;
+        white-space: normal;
+    } 
+}
+
+/* Início Media Queries do Botão do Slogan (resposividade do botão) */
+
+
+@media screen and (min-width: 749px) and (max-width: 999px) { /* MQ3 botão slogan */
+
+    .parte-esquerda-slogan {
+        width: 98vw;
+    }
 }
 
 
@@ -87,8 +139,16 @@ main { /*Parte principal do site*/
     height: 600px;
     width: 50%;
     background-image: url(../imagens/social-media-g92be9e10f_1280.png);
-    background-size: cover;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
     border-bottom: 8px solid var(--cor05);
+}
+
+@media screen and (min-width: 749px) and (max-width: 999px) { /* tirar img slogan quando width < 1000px */
+    .parte-direita-slogan {
+        display: none;
+    }
 }
 
 .parte-cima-main {
