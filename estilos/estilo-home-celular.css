@@ -55,6 +55,10 @@ main { /*Parte principal do site*/
     margin-top: 20px;
 }
 
+.parte-direita-slogan > button > a {
+    margin: 10px;
+}
+
 .parte-esquerda-slogan a {
     display: block;
     text-decoration: none;

@@ -42,7 +42,6 @@ main { /*Parte principal do site*/
     color: var(--cor05);
     box-shadow: 6px 5px 14px rgba(0, 0, 0, 0.673);
     margin-top: 20px;
-    padding: 15px;
 }
 
 .parte-esquerda-slogan a {
