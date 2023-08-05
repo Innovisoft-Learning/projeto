@@ -473,7 +473,7 @@ main { /*Parte principal do site*/
 
 @media screen and (max-width: 1250px) {
     .card-wrapper {
-        width: 35%; /* Reduzir a largura para que dois cards se encaixem em uma única linha */
+        width: 25%; /* Reduzir a largura para que dois cards se encaixem em uma única linha */
     }
     .container-cards {
         justify-content: center; /* Centralizar os cards quando estiverem em uma única linha */

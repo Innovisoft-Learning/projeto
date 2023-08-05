@@ -244,7 +244,26 @@ main { /*Parte principal do site*/
     background-position: center center;
 }
 
-/*Inicio da sessão sobre nós*/
+/* CSS para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .parte-baixo-sobre-nos {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 45%;
+        margin: 10px;
+    }
+
+    /* O terceiro card ocupa toda a largura disponível e é centralizado */
+    .card:nth-child(3) {
+        width: 90%;
+        align-self: center;
+        margin: 10px 0;
+    }
+}
+
+/* Início Seção Sobre Nós */
 .sobre-nos { /* class principal da seção */
     background-image: linear-gradient(to top, var(--cor05), #3865CB);
 }
@@ -263,6 +282,7 @@ main { /*Parte principal do site*/
 .parte-cima-sobre-nos {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .texto-sobre-nos {
@@ -277,7 +297,7 @@ main { /*Parte principal do site*/
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
 }
 
 .foto-sobre-nos > img {
@@ -293,27 +313,28 @@ main { /*Parte principal do site*/
     font-family: var(--fonte05);
     color: white;
     text-align: justify;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 15px;
 }
 
 .parte-baixo-sobre-nos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
     column-gap: 50px;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 35%;
     border: 2px solid black;
     border-radius: 10px;
     background-color: var(--cor04);
-    margin: 50px 0px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.473);
 }
 
@@ -332,6 +353,7 @@ main { /*Parte principal do site*/
 
 .card-corpo {
     width: 100%;
+    height: 145px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -342,7 +364,7 @@ main { /*Parte principal do site*/
 }
 
 .card-corpo > h4 {
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 5px;
     font-family: var(--fonte04);
     text-align: center;
@@ -355,6 +377,37 @@ main { /*Parte principal do site*/
 .card-corpo > ul > li {
     margin: 5px;
     font-family: var(--fonte02);
+    font-size: 0.8em;
 }
 
-/*Fim da sesão sobre nós*/
+.parte-baixo-sobre-nos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 50px;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-wrapper {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+@media screen and (max-width: 1250px) {
+    .card-wrapper {
+        width: 40%; /* Reduzir a largura para que dois cards se encaixem em uma única linha */
+    }
+    .container-cards {
+        justify-content: center; /* Centralizar os cards quando estiverem em uma única linha */
+    }
+}
+
+/* Fim Seção Sobre Nós */
