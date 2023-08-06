@@ -26,7 +26,6 @@ main { /*Parte principal do site*/
     align-items: center;
     width: 50%;
     height: 600px;
-    border-bottom: 8px solid var(--cor05);
 }   
 
 .parte-esquerda-slogan > button {
@@ -138,7 +137,6 @@ main { /*Parte principal do site*/
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    border-bottom: 8px solid var(--cor05);
 }
 
 @media screen and (min-width: 749px) and (max-width: 999px) { /* tirar img slogan quando width < 1000px */
