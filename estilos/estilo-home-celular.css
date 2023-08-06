@@ -232,6 +232,24 @@ main { /*Parte principal do site*/
     font-size: 1.5em;
 }
 
+.funcao > .parte-esquerda-funcao > .link-funcao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.funcao > .parte-esquerda-funcao > .link-funcao > a {
+    display: flex;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: var(--fonte01);
+    color: var(--cor03);
+}
+
+.funcao > .parte-esquerda-funcao > .link-funcao > a:hover {
+    text-decoration: underline  ;
+}
+
 .parte-direita-funcao-conexao {
     height: 35vh;
     background-image: url(../imagens/conexoes.jpg);

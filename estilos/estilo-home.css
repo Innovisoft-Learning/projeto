@@ -315,6 +315,24 @@ main { /*Parte principal do site*/
     text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.489);
 }
 
+.funcao > .parte-esquerda-funcao > .link-funcao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.funcao > .parte-esquerda-funcao > .link-funcao > a {
+    display: flex;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: var(--fonte01);
+    color: var(--cor03);
+}
+
+.funcao > .parte-esquerda-funcao > .link-funcao > a:hover {
+    text-decoration: underline  ;
+}
+
 .parte-direita-funcao-conexao {
     width: 40%;
     background-image: url(../imagens/conexoes.jpg);
