@@ -153,6 +153,38 @@ main { /*Parte principal do site*/
     width: 100vw;
 }
 
+.apresentação {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--cor05);
+    background-image: url(../imagens/teste.jpg);
+    background-repeat: no-repeat ;
+    background-size: contain;
+    background-position: right;
+    height: 500px;
+    width: 100%;
+}
+
+.apresentação > .texto-apresentação > h2 {
+    color: var(--cor03);
+    font-family: var(--fonte04);
+    font-size: 1.8em;
+    padding: 80px 20px 20px 20px;
+}
+
+.apresentação > .texto-apresentação > p {
+    color: var(--cor02);
+    font-family: var(--fonte02);
+    font-size: 1.5em;
+    padding: 20px;
+    text-indent: 20px;
+}
+
+
+
+
+
 .cursos-quadrados { /*Parte geral da seção*/
     display: flex;
     flex-direction: column;
@@ -161,7 +193,7 @@ main { /*Parte principal do site*/
 }
 
 .cursos-quadrados > h1 {
-    color: white;
+    color: var(--cor02);
     font-family: var(--fonte01);
     font-size: 2em;
     text-align: center;
@@ -178,7 +210,8 @@ main { /*Parte principal do site*/
     background-color: var(--cor03);
     border-radius: 150px;
     border: 4px solid transparent;
-    background: linear-gradient(var(--cor01), var(--cor01)) padding-box, linear-gradient(180deg, var(--cor04), var(--cor04)) border-box;
+    background: linear-gradient(var(--cor01), var(--cor01)) padding-box,
+    linear-gradient(to right, var(--cor03), var(--cor04)) border-box;
 }
 
 .quadrados > .img-logo-linguagem { /* Logo de cada linguagem*/
@@ -194,8 +227,8 @@ main { /*Parte principal do site*/
     font-size: clamp(1.2em, 1.8vw, 1.7em);
     font-family: var(--fonte05);
     margin-right: 20px;
-    margin-left: 27px;
-    color: white;
+    margin-left: 20px;
+    color: var(--cor02);
 }
 
 .linguas {
@@ -273,11 +306,11 @@ main { /*Parte principal do site*/
 
 .funcao {
     display: flex;
-    background-color: white;
+    background-color: var(--cor02);
     padding: 18px;
     margin: 20px;
     width: 80vw;
-    border: 2px solid var(--cor04);
+    border: 4px solid var(--cor03);
     border-radius: 30px 0px;
 }
 
@@ -335,7 +368,7 @@ main { /*Parte principal do site*/
 
 .parte-direita-funcao-conexao {
     width: 40%;
-    background-image: url(../imagens/conexoes.jpg);
+    background-image: url(../imagens/conexoes-removebg-preview.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -343,7 +376,7 @@ main { /*Parte principal do site*/
 
 .parte-direita-funcao-rank {
     width: 40%;
-    background-image: url(../imagens/rank.jpg);
+    background-image: url(../imagens/rank-removebg-preview.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
