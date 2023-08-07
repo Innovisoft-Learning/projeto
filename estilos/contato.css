@@ -1,0 +1,86 @@
+@charset "UTF-8";
+@import url(estilo-base.css);
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 150px;
+}
+
+main {
+    background-color: #283e82;
+    height: 1000px;
+}
+
+.espaco { /* padding e margin no h1 estava afetando o header */
+    height: 35px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2.4em;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 1.4em;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 5px;
+    color: white;
+}
+
+.container-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 80px;
+
+    margin-top: 20px;
+}
+
+input {
+    width: 400px;
+    background-color: var(--cor05);
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    color: rgb(247, 247, 247);
+
+}
+
+input:focus {
+    outline: none;
+}
+
+.container-textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea {
+    width: 900px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--cor05);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.container-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+}
