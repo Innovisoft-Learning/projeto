@@ -8,16 +8,15 @@ html {
 
 main {
     background-color: #283e82;
-    height: 1000px;
 }
 
 .espaco { /* padding e margin no h1 estava afetando o header */
-    height: 35px;
+    height: 55px;
 }
 
 .titulo {
     text-align: center;
-    font-size: 2.4em;
+    font-size: 2.6em;
     padding-left: 30px;
     padding-right: 30px;
     color: white;
@@ -39,7 +38,7 @@ main {
     align-items: center;
     column-gap: 80px;
 
-    margin-top: 20px;
+    margin-top: 55px;
 }
 
 input {
@@ -83,4 +82,64 @@ textarea:focus {
     align-items: center;
 
     margin-top: 20px;
+}
+
+.botao-enviar {
+    width: 250px;
+    background-image: linear-gradient(to right, var(--cor03), var(--cor04));
+    border-radius: 30px;
+    box-shadow: 4px 5px 15px rgba(0, 0, 0, 0.536);
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.botao-enviar:hover {
+    color: rgb(199, 199, 199);
+}
+.titulo-perguntas-frequentes {
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+    font-size: 2.4em;
+}
+
+.perguntas-frequentes {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 30px;
+    padding-bottom: 30px;
+
+    color: white;
+}
+
+.container-perguntas-esquerda {
+    width: 50%;
+    padding-left: 60px;
+    padding-right: 70px;
+
+    text-align: justify;
+}
+
+.container-perguntas-direita {
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 130px;
+
+    text-align: justify;
+}
+
+.pergunta {
+    margin-bottom: 30px;
+}
+
+.pergunta > h2 {
+    font-size: 1.8em;
+    margin-bottom: 4px;
+}
+
+.pergunta > p {
+    font-size: 1em;
+    text-indent: 10px;
 }
