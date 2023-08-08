@@ -151,37 +151,49 @@ main { /*Parte principal do site*/
     width: 100vw;
 }
 
-.apresentação {
+.primeira-parte {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: var(--cor05);
-    background-image: url(../imagens/teste.jpg);
-    background-repeat: no-repeat ;
-    background-size: contain;
-    background-position: right;
-    height: 500px;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-.apresentação > .texto-apresentação > h2 {
-    color: var(--cor03);
-    font-family: var(--fonte04);
-    font-size: 1.8em;
-    padding: 80px 20px 20px 20px;
+.falso-editor {
+    background-color: #02001a;
+    padding: 15px;
+    width: 50%;
+    margin: 30px;
+    display: flex;
+    margin-left: 0px;
 }
 
-.apresentação > .texto-apresentação > p {
-    color: var(--cor02);
-    font-family: var(--fonte02);
+.marcador {
     font-size: 1.5em;
-    padding: 20px;
-    text-indent: 20px;
+    background-color: #02001a;
+    padding: 15px;
+    color: var(--cor04);
+    font-family: monospace;
+    border-right: 1px solid white;
 }
 
+.primeira-parte > button {
+    background-color: var(--cor04);
+    width: 10%;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
 
+.primeira-parte > button > p {
+    font-family: var(--fonte01);
+    font-size: 1.5em;
+    align-self: center;
+}
 
-
+.primeira-parte > .falso-editor > code {
+    color: white;
+    font-family: monospace;
+    font-size: 1.5em;
+}
 
 .cursos-quadrados { /*Parte geral da seção*/
     display: flex;

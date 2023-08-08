@@ -80,6 +80,49 @@ main { /*Parte principal do site*/
     display: flex;
 }
 
+.primeira-parte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.falso-editor {
+    background-color: #02001a;
+    padding: 15px;
+    width: 50%;
+    margin: 30px;
+    display: flex;
+    margin-left: 0px;
+}
+
+.marcador {
+    font-size: 1.2em;
+    background-color: #02001a;
+    padding: 15px;
+    color: var(--cor04);
+    font-family: monospace;
+    border-right: 1px solid white;
+}
+
+.primeira-parte > button {
+    background-color: var(--cor04);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.primeira-parte > button > p {
+    font-family: var(--fonte01);
+    font-size: 1.2em;
+    align-self: center;
+}
+
+.primeira-parte > .falso-editor > code {
+    color: white;
+    font-family: monospace;
+    font-size: 1.2em;
+}
 
 .cursos-quadrados { /*Parte geral da seção*/
     display: flex;
