@@ -316,7 +316,7 @@ main { /*Parte principal do site*/
 
 .funcao {
     display: flex;
-    background-color: var(--cor02);
+    background-color: white;
     padding: 18px;
     margin: 20px;
     width: 80vw;
@@ -392,7 +392,41 @@ main { /*Parte principal do site*/
     background-position: center center;
 }
 
-/* Fim Funções do site
+/* Fim Funções do site */
+
+/* Inicio apresentação app */
+.parte-aplicativo {
+    background-image: linear-gradient(to bottom, #06032b, #3865CB);
+    padding-bottom: 50px;
+}
+
+.parte-aplicativo > h1 {
+    color: white;
+    font-family: var(--fonte01);
+    font-size: 2em;
+    text-align: center;
+}
+
+.conteudo-app {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.conteudo-app > div > p {
+    font-family: var(--fonte05);
+    margin: 50px;
+    color: white;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.celular {
+    width: 60%;
+}
+
+/* Fim apresentação app */
+
 
 /* Início Seção Sobre Nós */
 .sobre-nos { /* class principal da seção */
@@ -416,7 +450,6 @@ main { /*Parte principal do site*/
 }
 
 .texto-sobre-nos {
-    background-color: transparent;
     width: 50%;
     display: flex;
     justify-content: center;

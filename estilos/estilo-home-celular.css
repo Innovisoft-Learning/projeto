@@ -310,6 +310,44 @@ main { /*Parte principal do site*/
     background-repeat: no-repeat;
     background-position: center center;
 }
+/*Fim da seção de funções*/
+
+/* Inicio apresentação app */
+.parte-aplicativo {
+    background-image: linear-gradient(to bottom, #06032b, #3865CB);
+    padding-bottom: 50px;
+}
+
+.parte-aplicativo > h1 {
+    color: white;
+    font-family: var(--fonte01);
+    font-size: 2em;
+    text-align: center;
+}
+
+.conteudo-app {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-app > div > p {
+    font-family: var(--fonte05);
+    margin: 50px;
+    color: white;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.celular {
+    width: 60%;
+}
+
+/* Fim apresentação app */
+
+/* Início Seção Sobre Nós */
 
 /* CSS para dispositivos móveis */
 @media screen and (max-width: 768px) {
@@ -330,7 +368,7 @@ main { /*Parte principal do site*/
     }
 }
 
-/* Início Seção Sobre Nós */
+
 .sobre-nos { /* class principal da seção */
     background-image: linear-gradient(to top, var(--cor05), #3865CB);
 }
