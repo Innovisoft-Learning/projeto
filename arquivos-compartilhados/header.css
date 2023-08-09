@@ -49,6 +49,8 @@
 /*Template para a barra de pesquisa*/
 
 .search-box {
+    display: flex;
+    align-items: center;
     width: fit-content;
     height: fit-content;
     position: relative;
