@@ -397,11 +397,12 @@ main { /*Parte principal do site*/
 /* Inicio apresentação app */
 .parte-aplicativo {
     background-image: linear-gradient(to bottom, #06032b, #3865CB);
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 70px; 
 }
 
 .parte-aplicativo > h1 {
-    color: white;
+    color: var(--cor04);
     font-family: var(--fonte01);
     font-size: 2em;
     text-align: center;
@@ -418,11 +419,12 @@ main { /*Parte principal do site*/
     margin: 50px;
     color: white;
     text-align: justify;
-    font-size: 1.2em;
+    font-size: 1.6em;
+    text-indent: 40px;
 }
 
 .celular {
-    width: 60%;
+    width: 80%;
 }
 
 /* Fim apresentação app */
@@ -435,7 +437,7 @@ main { /*Parte principal do site*/
 
 .sobre-nos > h1 { /* título da seção */
     text-align: center;
-    color: white;
+    color: var(--cor04);
     font-family: var(--fonte01);
     font-size: 2em;
 }
@@ -477,7 +479,8 @@ main { /*Parte principal do site*/
     color: white;
     text-align: justify;
     font-size: 1.5em;
-    margin: 15px;
+    margin: 25px;
+    text-indent: 40px;
 }
 
 .parte-baixo-sobre-nos {
