@@ -1,0 +1,99 @@
+@charset "UTF-8";
+@import url(estilo-base.css);
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 150px;
+}
+
+main {
+    background-color: #283e82;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 220px;
+    margin-top: 90px;
+}
+
+h1 { /* Obrigado por nos enviar... */
+    color: #89a7ff;
+    font-size: 2.2em;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+}   
+
+h2 { /* Recebemos sua mensagem... */
+    color: #becfff;
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: lighter;
+
+    margin-bottom: 30px;
+}
+
+.botao-pag-inicial {
+    width: 180px;
+    height: 43px;
+
+    background-image: linear-gradient(45deg, var(--cor03), var(--cor04));
+    border-radius: 100px;
+    box-shadow: 6px 5px 14px rgba(0, 0, 0, 0.673);
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-botao-pag-inicial { /* Link do Botão "Página inicial" */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.link-botao-pag-inicial:hover {
+    color: rgb(199, 199, 199);
+}
+
+.links {
+    margin-top: 165px;
+}
+
+.links > p {
+    color: #becfff;
+}
+
+/* início botões redes sociais */
+.icones-redes {
+    color: white;
+    font-size: 2em;
+    margin: 10px;
+}
+
+@keyframes animacao4 {
+    from {
+        color: white;
+    }
+
+    to {
+        color: var(--cor04);
+        text-shadow: 0px 0px 5px var(--cor04);
+    }
+}
+
+.icones-redes:hover {
+    animation: animacao4 0.5s forwards;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+}
+/* fim botões redes sociais */

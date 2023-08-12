@@ -98,6 +98,8 @@ textarea:focus {
     color: rgb(199, 199, 199);
 }
 .titulo-perguntas-frequentes {
+    margin-right: 30px;
+    margin-left: 30px;
     margin-top: 100px;
     text-align: center;
     color: white;
