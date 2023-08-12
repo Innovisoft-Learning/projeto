@@ -25,9 +25,12 @@ img {
 h1 { /* Obrigado por nos enviar... */
     color: #89a7ff;
     font-size: 2.2em;
+    text-align: center;
 
     margin-top: 15px;
     margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }   
 
 h2 { /* Recebemos sua mensagem... */
@@ -36,6 +39,8 @@ h2 { /* Recebemos sua mensagem... */
     text-align: center;
     font-weight: lighter;
 
+    padding-left: 15px;
+    padding-right: 15px;
     margin-bottom: 30px;
 }
 
@@ -63,7 +68,7 @@ h2 { /* Recebemos sua mensagem... */
 }
 
 .links {
-    margin-top: 165px;
+    margin-top: 140px;
 }
 
 .links > p {
