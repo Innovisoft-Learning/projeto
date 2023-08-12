@@ -169,9 +169,11 @@ textarea:focus {
 
     .container-perguntas-direita {
         padding: 0px;
+        width: 80vw;
     }
 
     .container-perguntas-esquerda {
         padding: 0px;
+        width: 80vw;
     }
 }
