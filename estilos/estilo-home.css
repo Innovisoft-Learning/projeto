@@ -467,7 +467,6 @@ main { /*Parte principal do site*/
 
 .foto-sobre-nos > img {
     width: 75%;
-    height: 75%;
     border-radius: 20px;
     box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.585);
     background-size: cover;
@@ -510,6 +509,7 @@ main { /*Parte principal do site*/
     border-start-end-radius: 7px;
     border-start-start-radius: 7px;
     align-self: center;
+    position: relative;
 }
 
 .card > hr {
