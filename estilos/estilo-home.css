@@ -220,8 +220,8 @@ main { /*Parte principal do site*/
     background-color: var(--cor03);
     border-radius: 150px;
     border: 4px solid transparent;
-    background: linear-gradient(var(--cor01), var(--cor01)) padding-box,
-    linear-gradient(to right, var(--cor03), var(--cor04)) border-box;
+    background: linear-gradient(to right, var(--cor05), var(--cor03)) padding-box,
+    linear-gradient(to right, var(--cor03), var(--cor05)) border-box;
 }
 
 .quadrados > .img-logo-linguagem { /* Logo de cada linguagem*/
@@ -238,7 +238,7 @@ main { /*Parte principal do site*/
     font-family: var(--fonte05);
     margin-right: 20px;
     margin-left: 20px;
-    color: var(--cor02);
+    color: white;
 }
 
 .linguas {
