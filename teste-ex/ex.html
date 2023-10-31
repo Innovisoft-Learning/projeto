@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="ex.css">
+    <link rel="stylesheet" href="../estilos/estilo-base.css">
+</head>
+
+<body>
+    <div class="slideshow-container">
+        <div class="slide">
+            <div class="meio">
+            <h1>Função print</h1>
+            <p style="margin-top: 20px; margin-bottom: 10px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, officiis tenetur commodi accusamus eos fuga numquam fugit delectus dolores quos, accusantium sit at officia? Recusandae saepe reiciendis perspiciatis quia odit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae provident quaerat, repellendus totam quo rem sunt et distinctio ipsa cum perspiciatis laboriosam temporibus a eveniet vel, pariatur quibusdam! Aliquam, alias.</p>
+            <img src="print-gif.gif" alt="">              
+            </div>
+            <button onclick="nextSlide()">></button>
+        </div>
+        <div class="slide" style="justify-content: space-between;">
+            <button onclick="prevSlide()"><</button>
+            <div class="meio" style="width: 60%; justify-content: center;">
+                <h1 style="margin-bottom:30px;">Exercicio 1</h1>
+                <div class="exercicio">
+                    <form action="">
+                        <label class="questao" for="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum doloribus saepe quisquam velit ea quod? Quisquam quae saepe sapiente. Tempora, laboriosam fuga tenetur impedit cum maiores excepturi dicta consectetur nam! Lorem ipsum dolo</label>
+                        <div class="container-resposta">
+                            <div class="resposta">
+                                <input type="button" class="botao-ex" value="A">
+                                <span>print</span>
+                            </div>
+                            <div class="resposta">
+                                <input type="button" class="botao-ex errados" value="B">
+                                <span>input</span>
+                            </div>
+                            <div class="resposta">
+                                <input type="button" onclick="botaoErrado()" class="botao-ex errados" value="C">
+                                <span>console.log</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <button onclick="nextSlide()">></button>
+        </div>
+        <div class="slide">
+            <h1>Slide 3</h1>
+            <p>Conteúdo do terceiro slide.</p>
+        </div>
+    </div>
+    <script src="ex.js"></script>
+</body>
+
+</html>
