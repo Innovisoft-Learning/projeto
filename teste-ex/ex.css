@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: row;
     padding: 10px;
-    background-color: var(--cor03);
+    background-image: linear-gradient(to bottom, var(--cor05), var(--cor03));
     align-items: center; /* Centraliza o conteúdo horizontalmente */
     text-align: justify;
     border-radius: 10px;
@@ -25,13 +25,14 @@
 
 .slide h1 {
     font-size: 24px;
-    color: var(--cor04);
+    color: var(--cor03);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .slide p {
     font-size: 16px;
-    color: var(--cor05);
-    font-family: var(--fonte05);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .slide img {
@@ -54,8 +55,8 @@
 }
 
 button{
-    background-color: var(--cor03);
-    color: var(--cor05);
+    background-color: var(--cor05);
+    color: var(--cor03);
     font-size: 4em;
     border: none;
     cursor: pointer;
