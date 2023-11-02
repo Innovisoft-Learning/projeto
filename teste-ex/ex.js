@@ -4,6 +4,10 @@ let modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
 let textoModal = document.getElementById("texto-modal");
 let correcao = "none";
+let itens = document.getElementsByClassName("itens");
+let caixaItens = document.getElementById("caixa-itens");
+let caixaDrop = document.getElementById("caixa-drop");
+let ordemCerta = ["item1", "item2", "item3", "item4"];
 
 
 
@@ -136,3 +140,61 @@ function verificarResposta() {
         textoModal.innerHTML = "Que pena, a resposta está incorreta. ❌"
     }
 };
+
+for (i of itens) {
+    i.addEventListener("dragstart", function(e){
+        let selecionado = e.target;
+
+        caixaDrop.addEventListener("dragover", function(e){
+            e.preventDefault();
+        });
+
+        caixaDrop.addEventListener("drop", function(e){
+            caixaDrop.appendChild(selecionado);
+            selecionado = null;
+        });
+        
+        caixaItens.addEventListener("dragover", function(e){
+            e.preventDefault();
+        });
+
+        caixaItens.addEventListener("drop", function(e){
+            caixaItens.appendChild(selecionado);
+            selecionado = null;
+        });
+    })
+
+    
+};
+
+function confirmar3 () {
+    var botao3 = document.getElementById("botao-confirmar3");
+
+    const caixaDrop = document.getElementById('caixa-drop'); // Obtém a referência à div.
+    const elementosArrastaveis = caixaDrop.querySelectorAll('.itens');
+
+// Obtenha os IDs dos elementos arrastáveis na ordem atual.
+    const ordemAtual = Array.from(elementosArrastaveis).map(elemento => elemento.id);
+
+    const sequenciaCorreta = JSON.stringify(ordemAtual) === JSON.stringify(ordemCerta);
+    console.log(sequenciaCorreta);
+    modal.style.display = "block";
+    textoModal.style.color = "black";
+    botao3.disabled = "true";
+    botao3.style.cursor = "not-allowed";
+    for (i of ordemCerta) {
+        let x = document.getElementById(i);
+        console.log(x);
+        x.draggable = false;
+        console.log(x);
+    }
+
+    if (sequenciaCorreta) {
+        textoModal.innerHTML = "Parabéns, você acertou! ✅";
+    }
+
+    else {
+        textoModal.innerHTML = "Que pena, a sequência está incorreta. ❌";
+    }
+
+}
