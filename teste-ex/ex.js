@@ -119,3 +119,20 @@ document.getElementById("botao-confirmar").addEventListener("click", function ()
     botaoConfirmar.style.cursor = "not-allowed";
 
 });
+
+function verificarResposta() {
+    var botao2 = document.getElementById("botao-confirmar2");
+    var dropdown = document.getElementById("opcoes-dropdown");
+    var selectedOption = dropdown.options[dropdown.selectedIndex].value;
+    modal.style.display = "block";
+    textoModal.style.color = "black";
+    botao2.disabled = "true";
+    dropdown.disabled = "true";
+    botao2.style.cursor = "not-allowed";
+    dropdown.style.cursor = "not-allowed";
+    if (selectedOption === "a") {
+        textoModal.innerHTML = "Parabéns, você acertou! ✅";
+    } else {
+        textoModal.innerHTML = "Que pena, a resposta está incorreta. ❌"
+    }
+};

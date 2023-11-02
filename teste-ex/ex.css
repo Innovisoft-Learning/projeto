@@ -191,3 +191,49 @@ input[type="checkbox"] {
     color: white;
     align-self: center;
 }
+.caixa-codigo {
+    align-self: center;
+    background-color: #02001a;
+    color: white;
+    border: 2px solid white;
+    text-align: left;
+    width: 500px;
+    padding-left: 12px;
+}
+
+.falso-editor {
+    display: flex;
+    align-self: center;
+    width: 50%;
+}
+
+.marcador-editor {
+    background-color: #02001a;
+    color: aqua;
+    font-family: monospace;
+    text-align: center;
+    font-size: 1.8em;
+    border: 2px solid white;
+    width: 55px;
+    border-right: 0px;
+}
+
+code {
+    font-size: 1.8em;
+    font-family: monospace;
+}
+
+option {
+    font-size: 1em;
+    font-family: monospace;
+}
+
+select {
+    width: 56px;
+    height: 30px;
+    font-size: 1em;
+    font-family: monospace;
+    background-color: #02001a;
+    color: white;
+    border: 1px solid rgb(201, 201, 201);
+}
