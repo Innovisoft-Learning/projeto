@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../estilos/estilo-base.css">
 </head>
 
-<body>
+<body style="background-color: rgb(29, 0, 107); background-image: linear-gradient(to bottom, rgb(29, 0, 107), rgb(44, 0, 163));">
     <div class="slideshow-container">
         <div class="slide">
             <div class="meio">
@@ -21,23 +21,21 @@
             <div class="meio" style="width: 60%; justify-content: center;">
                 <h1 style="margin-bottom:30px;">Exercicio 1</h1>
                 <div class="exercicio">
-                    <form action="">
-                        <label class="questao" for="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum doloribus saepe quisquam velit ea quod? Quisquam quae saepe sapiente. Tempora, laboriosam fuga tenetur impedit cum maiores excepturi dicta consectetur nam! Lorem ipsum dolo</label>
+                        <p> class="questao" for="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum doloribus saepe quisquam velit ea quod? Quisquam quae saepe sapiente. Tempora, laboriosam fuga tenetur impedit cum maiores excepturi dicta consectetur nam! Lorem ipsum dolo</label>
                         <div class="container-resposta">
                             <div class="resposta">
-                                <input type="button" class="botao-ex" value="A">
+                                <button class="botao-ex" value="A" onclick="botao(this)" >A</button>
                                 <span>print</span>
                             </div>
                             <div class="resposta">
-                                <input type="button" class="botao-ex errados" value="B">
+                                <button class="botao-ex errados" value="B" onclick="botao(this)" >B</button>
                                 <span>input</span>
                             </div>
                             <div class="resposta">
-                                <input type="button" onclick="botaoErrado()" class="botao-ex errados" value="C">
+                                <button class="botao-ex errados" value="C" onclick="botao(this)" >C</button>
                                 <span>console.log</span>
                             </div>
                         </div>
-                    </form>
                 </div>
             </div>
             <button onclick="nextSlide()">></button>
