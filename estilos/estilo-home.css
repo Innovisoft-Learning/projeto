@@ -398,7 +398,6 @@ main { /*Parte principal do site*/
 .parte-aplicativo {
     background-image: linear-gradient(to bottom, #06032b, #3865CB);
     padding-top: 20px;
-    padding-bottom: 70px; 
 }
 
 .parte-aplicativo > h1 {
@@ -423,8 +422,18 @@ main { /*Parte principal do site*/
     text-indent: 40px;
 }
 
-.celular {
-    width: 80%;
+.texto-conteudo-app { /* texto a esquerda da imagem do app nos celulares */
+    width: 50%;
+    margin-top: 60px;
+}
+
+.destaque-texto {
+    color: var(--cor04);
+    font-family: var(--fonte05);
+}
+
+.celular-conteudo-app {  /* imagem do app nos celulares */
+    width: 50%;
 }
 
 /* Fim apresentação app */
@@ -453,9 +462,7 @@ main { /*Parte principal do site*/
 
 .texto-sobre-nos {
     width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .foto-sobre-nos {
@@ -473,12 +480,21 @@ main { /*Parte principal do site*/
     border: 2px solid black;
 }
 
+.titulo-paragrafos-sobre-nos {
+    font-size: 2em;
+    color: white;
+    margin-left: 50px;
+}
+
 .texto-sobre-nos p {
     font-family: var(--fonte05);
     color: white;
     text-align: justify;
     font-size: 1.5em;
-    margin: 25px;
+    margin: 50px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    
     text-indent: 40px;
 }
 
@@ -496,7 +512,7 @@ main { /*Parte principal do site*/
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 15%;
+    width: 13%;
     border: 2px solid black;
     border-radius: 10px;
     background-color: var(--cor04);
@@ -560,7 +576,7 @@ main { /*Parte principal do site*/
 }
 
 .card-wrapper {
-    min-width: 15%;
+    min-width: 13%;
     max-width: 35%;
     display: flex;
     flex-direction: column;

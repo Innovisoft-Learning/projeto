@@ -325,6 +325,7 @@ main { /*Parte principal do site*/
     text-align: center;
 }
 
+
 .conteudo-app {
     width: 100vw;
     display: flex;
@@ -341,8 +342,8 @@ main { /*Parte principal do site*/
     font-size: 1.2em;
 }
 
-.celular {
-    width: 60%;
+.celular-conteudo-app {
+    width: 100vw;
 }
 
 /* Fim apresentação app */
@@ -393,9 +394,18 @@ main { /*Parte principal do site*/
 .texto-sobre-nos {
     background-color: transparent;
     width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.titulo-paragrafos-sobre-nos {
+    font-size: 2em;
+    color: white;
+    margin-left: 16px;
+}
+
+
+.destaque-texto {
+    color: var(--cor04);
+    font-family: var(--fonte05);
 }
 
 .foto-sobre-nos {
@@ -420,16 +430,18 @@ main { /*Parte principal do site*/
     text-align: justify;
     font-size: 1.2em;
     margin: 15px;
+    margin-bottom: 55px;
 }
 
 .parte-baixo-sobre-nos {
     justify-content: space-evenly;
-    column-gap: 50px;
+    column-gap: 8vw;
 }
 
 .container-cards {
     display: flex;
     justify-content: center;
+    column-gap: 10px;
 }
 
 .card {
@@ -489,7 +501,7 @@ main { /*Parte principal do site*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    column-gap: 50px;
+    column-gap: 8vw;
 }
 
 .container-cards {
