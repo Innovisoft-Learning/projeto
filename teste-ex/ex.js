@@ -8,6 +8,12 @@ let itens = document.getElementsByClassName("itens");
 let caixaItens = document.getElementById("caixa-itens");
 let caixaDrop = document.getElementById("caixa-drop");
 let ordemCerta = ["item1", "item2", "item3", "item4"];
+let botao4 = document.getElementById("run");
+let codigo2 = document.getElementById("codigo");
+let listaBotoes = document.getElementsByClassName("btn");
+let ultimo = document.getElementById("ultimo");
+
+let acertos = 0;
 
 
 
@@ -39,6 +45,8 @@ function prevSlide() {
 
 
 function botao(botaoClicado) {
+    listaBotoes[0].disabled = false;
+    listaBotoes[0].style.cursor = "pointer";
     let errados = document.getElementsByClassName("errados");
     let botoes = document.getElementsByClassName("botao-ex");
     modal.style.display = "block";
@@ -47,6 +55,7 @@ function botao(botaoClicado) {
         console.log(botaoClicado);
         botaoClicado.innerHTML = "✔";
         textoModal.innerHTML = "Parabéns, você acertou! ✅";
+        acertos = acertos + 20;
     }
     else {
         botaoClicado.innerHTML = "❌";
@@ -81,6 +90,8 @@ document.getElementById("botao-confirmar").addEventListener("click", function ()
     var valoresSelecionados = [];
     var listaCerta = ['opcao2', 'opcao4'];
     var botaoConfirmar = document.getElementById("botao-confirmar");
+    listaBotoes[1].disabled = false;
+    listaBotoes[1].style.cursor = "pointer";
 
 
 
@@ -113,6 +124,8 @@ document.getElementById("botao-confirmar").addEventListener("click", function ()
     textoModal.style.color = "black";
     if (correcao == true){
         textoModal.innerHTML = "Parabéns, você acertou! ✅";
+        acertos = acertos + 20;
+
     }
 
     else {
@@ -134,8 +147,11 @@ function verificarResposta() {
     dropdown.disabled = "true";
     botao2.style.cursor = "not-allowed";
     dropdown.style.cursor = "not-allowed";
+    listaBotoes[2].disabled = false;
+    listaBotoes[2].style.cursor = "pointer";
     if (selectedOption === "a") {
         textoModal.innerHTML = "Parabéns, você acertou! ✅";
+        acertos = acertos + 20;
     } else {
         textoModal.innerHTML = "Que pena, a resposta está incorreta. ❌"
     }
@@ -169,6 +185,8 @@ for (i of itens) {
 
 function confirmar3 () {
     var botao3 = document.getElementById("botao-confirmar3");
+    listaBotoes[3].disabled = false;
+    listaBotoes[3].style.cursor = "pointer";
 
     const caixaDrop = document.getElementById('caixa-drop'); // Obtém a referência à div.
     const elementosArrastaveis = caixaDrop.querySelectorAll('.itens');
@@ -191,10 +209,59 @@ function confirmar3 () {
 
     if (sequenciaCorreta) {
         textoModal.innerHTML = "Parabéns, você acertou! ✅";
+        acertos = acertos + 20;
+
     }
 
     else {
         textoModal.innerHTML = "Que pena, a sequência está incorreta. ❌";
     }
 
+};
+
+document.getElementById('run').addEventListener('click', function() {
+    // Pega o valor do campo de entrada com id "codigo"
+    var codigo = document.getElementById('codigo').value;
+    listaBotoes[4].disabled = false;
+    listaBotoes[4].style.cursor = "pointer";
+    codigoInLower = codigo.toLowerCase();
+
+    botao4.disabled = "true";
+    botao4.style.cursor = "not-allowed";
+
+    codigo2.disabled = true;
+    codigo2.style.cursor = "not-allowed";
+    codigo2.placeholder = codigo;
+
+
+    if (codigoInLower == "print('python')") {
+        modal.style.display = "block";
+        textoModal.style.color = "black";
+        textoModal.innerHTML = "Parabéns, você acertou! ✅";
+        acertos = acertos + 20;
+
+    }
+
+    else {
+        modal.style.display = "block";
+        textoModal.style.color = "black";
+        textoModal.innerHTML = "Que pena, a resposta está incorreta. ❌"
+    }
+
+  });
+
+
+function ultimoBotao() {
+    let resultado = document.getElementById("resultado");
+    let imagem = document.getElementById("posicao");
+    nextSlide();
+    if (acertos < 60) {
+        resultado.innerHTML = `Que pena, você acertou ${acertos}%... Tente novamente!`
+        imagem.src = "pose_triste.png"
+    }
+
+    else {
+        resultado.innerHTML = `Parabéns, você acertou ${acertos}%. Continue assim!`
+        imagem.src = "pose_feliz.png"
+    }
 }

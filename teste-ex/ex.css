@@ -2,9 +2,6 @@
 @import url(../estilos/estilo-base.css);
 
 
-
-
-
 .slideshow-container {
     position: relative;
     overflow: hidden;
@@ -269,4 +266,107 @@ select {
     font-size: 1.8em;
     font-family: monospace;
     height: 30px;
+}
+
+
+.parte-direita, .parte-esquerda {
+    display: flex;
+    align-self: center;
+    width: 45%;
+    height: 95%;
+}
+
+.parte-esquerda {
+    width: 25%;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-content: flex-end;
+}
+
+.parte-direita {
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.fala {
+    width: 100%;
+    height: 2%;
+}
+
+#codigo {
+    align-self: center;
+    background-color: #02001a;
+    color: white;
+    border: 1px solid white;
+    text-align: left;
+    width: 90%;
+    height: 10%;
+    font-size: 1.5em;
+    font-family: monospace;
+    padding-left: 10px;
+}
+
+.run {
+    background-color: var(--cor04);
+    width: 30%;
+    height: 10%;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    color: black;
+    font-size: 1.8em;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-self: center;
+}
+
+.parte-baixo, .parte-cima {
+    height: 48%;
+    width: 60%;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+#resultado {
+    font-family: var(--fonte01);
+}
+
+#denovo {
+    display: flex;
+    background-color: #02001a;
+    width: 100px;
+    border: 1px solid white;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 50%;
+}
+
+#denovo > span, #home > span {
+    font-size: 5em;
+    align-self: center;
+    text-decoration: none;
+}
+
+#home {
+    display: flex;
+    background-color: #02001a;
+    width: 100px;
+    border: 1px solid white;
+    height: 100px;
+    justify-content: center;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+#home > span {
+    position: relative;
+    top: -4px;
 }

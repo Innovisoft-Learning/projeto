@@ -4,6 +4,8 @@
 <head>
     <link rel="stylesheet" type="text/css" href="ex.css">
     <link rel="stylesheet" href="../estilos/estilo-base.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body style="background-color: #140f52;">
@@ -49,7 +51,7 @@
                         </div>
                 </div>
             </div>
-            <button onclick="nextSlide()">></button>
+            <button onclick="nextSlide()" class="btn" disabled="true" style="cursor: not-allowed;">></button>
         </div>
         <div class="slide sl3">
             <button onclick="prevSlide()"><</button>
@@ -65,7 +67,7 @@
                 </div>
                 <button class="botao-confirmar" id="botao-confirmar">Confirmar</button>
             </div>
-            <button onclick="nextSlide()">></button>
+            <button onclick="nextSlide()" class="btn" disabled="true" style="cursor: not-allowed;">></button>
 
         </div>
         <div class="slide sl4">
@@ -103,7 +105,7 @@
                 </div>
                 <button class="botao-confirmar" onclick="verificarResposta()" id="botao-confirmar2">Confirmar</button>
             </div>
-            <button onclick="nextSlide()">></button>
+            <button onclick="nextSlide()" class="btn" disabled="true" style="cursor: not-allowed;">></button>
         </div>
         <div class="slide sl6">
             <button onclick="prevSlide()"><</button>
@@ -125,21 +127,37 @@
                 <button class="botao-confirmar" onclick="confirmar3()" id="botao-confirmar3">Confirmar</button>
 
             </div>
-            <button onclick="nextSlide()">></button>
+            <button onclick="nextSlide()" class="btn" disabled="true" style="cursor: not-allowed;">></button>
         </div>
         <div class="slide sl7">
             <button onclick="prevSlide()"><</button>
-            <div class="meio">
+            <div class="meio" style="flex-direction: row; justify-content: center;">
                 
+                <div class="parte-esquerda">
+                    <img src="pose_pergunta_nome.png" style="justify-self: right; height: 90%;" alt="">
+                </div>
+
+                <div class="parte-direita">
+                    <img src="fala2.png" style="height: 25%; margin: 0px; position: relative; left: -100px; top: -40px" class="fala" alt="Fala">
+                    <p style="margin-bottom: 30px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad doloremque nisi voluptatem quod laudantas!</p>
+                    <input type="text" name="codigo" id="codigo">
+                    <input type="button" id="run" class="run" value="Run">
+                </div>
             </div>
-            <button onclick="nextSlide()">></button>
+            <button onclick="ultimoBotao()" id="ultimo" class="btn" disabled="true" style="cursor: not-allowed;">></button>
         </div>
         <div class="slide sl8">
             <button onclick="prevSlide()"><</button>
-            <div class="meio">
-                
+            <div class="meio" style="flex-direction: column; align-content: center;">
+                <div class="parte-cima">
+                    <img src="pose_triste.png" id="posicao" style="height: 110%;" alt="">
+                    <div><p id="resultado">Que pena, você acertou X%... Tente novamente!</p></div>
+                </div>
+                <div class="parte-baixo">
+                    <a id="denovo" href="ex.html"><span class="material-symbols-outlined">refresh</span></a>
+                    <a id="home" href="../index.html"><span class="material-symbols-outlined">home</span></a>
+                </div>
             </div>
-            <button onclick="nextSlide()">></button>
         </div>
     </div>
     <script src="ex.js"></script>
