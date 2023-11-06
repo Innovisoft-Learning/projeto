@@ -434,6 +434,8 @@ main { /*Parte principal do site*/
 
 .celular-conteudo-app {  /* imagem do app nos celulares */
     width: 50%;
+    height: 550px;
+    align-self: center;
 }
 
 /* Fim apresentação app */
