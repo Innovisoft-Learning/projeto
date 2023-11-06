@@ -85,6 +85,7 @@ window.onclick = function (event) {
 }
 
 document.getElementById("botao-confirmar").addEventListener("click", function () {
+    let correcaoAbsoluta = null;
     var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
     var allCheckboxes = document.querySelectorAll('input[type="checkbox"]');
     var valoresSelecionados = [];
@@ -112,10 +113,17 @@ document.getElementById("botao-confirmar").addEventListener("click", function ()
             }
             else {
                 correcao = false;
+                correcaoAbsoluta = false;
             }
         }
     }
     else {
+        correcao = false;
+    };
+
+    console.log(correcaoAbsoluta);
+
+    if (correcaoAbsoluta == false) {
         correcao = false;
     }
 
