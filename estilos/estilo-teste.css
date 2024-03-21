@@ -228,6 +228,17 @@ main { /*Parte principal do site*/
     height: 80%;
 }
 
+@keyframes fundo-claro {
+    0% {
+        background-color: rgb(34, 34, 34)
+    }
+
+    100% {
+        background-color: rgb(63, 63, 63)
+    }
+}
+
+
 .quadrado-linguagem-v2:hover > h1 {
     color: white;
 }
@@ -235,6 +246,7 @@ main { /*Parte principal do site*/
 .quadrado-linguagem-v2:hover {
     cursor: pointer;
     animation: borda 1s forwards;
+    animation: fundo-claro 1s forwards;
 }
 
 .quadrado-linguagem-v2:hover > img {
@@ -306,22 +318,23 @@ main { /*Parte principal do site*/
 /* Funções do site*/
 
 .funcionalidades {
-    background: black;
+    background-image: linear-gradient(to right, #e6e6e6 50%, black 50%);
     background-size: cover;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
     width: 100vw;
 }
 
 .funcao {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
     padding: 18px;
     margin: 20px;
-    width: 80vw;
-    border: 4px solid var(--cor03);
-    border-radius: 30px 0px;
+    width: 30%;
+    /*border: 2px solid var(--cor03);*/
 }
 
 .titulo-funcao {
@@ -330,66 +343,33 @@ main { /*Parte principal do site*/
     align-items: center;
 }
 
-.parte-esquerda-funcao {
-    width: 60%;
-}
-
-.parte-esquerda-funcao > .titulo-funcao >  .icone,  .parte-esquerda-funcao > .titulo-funcao > h3 {
-    margin: 5px;
-}
-
-.funcao > .parte-esquerda-funcao > .titulo-funcao > h3 {
-    font-family: var(--fonte02);
-    font-size: 2em;
-    text-align: center;
-    color: var(--cor03);
-    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.489);
-
-}
-
-.funcao > .parte-esquerda-funcao > .titulo-funcao > .icone {
-    font-size: 3em;
-}
-
-.funcao > .parte-esquerda-funcao > ul > li {
-    margin: 15px 20px;
-    font-size: 1.4em;
-    color: var(--cor01);
-    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.489);
-}
-
-.funcao > .parte-esquerda-funcao > .link-funcao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.funcao > .parte-esquerda-funcao > .link-funcao > a {
-    display: flex;
-    text-decoration: none;
+.funcao li {
+    margin: 20px;
     font-size: 1.5em;
-    font-family: var(--fonte01);
-    color: var(--cor03);
 }
 
-.funcao > .parte-esquerda-funcao > .link-funcao > a:hover {
-    text-decoration: underline  ;
+.funcao h3 {
+    font-size: 2.5em;
 }
 
-.parte-direita-funcao-conexao {
-    width: 40%;
-    background-image: url(../imagens/conexoes-removebg-preview.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
+.funcao li, .funcao h3 {
+    font-family: var(--fonte05);
 }
 
-.parte-direita-funcao-rank {
-    width: 40%;
-    background-image: url(../imagens/rank-removebg-preview.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
+
+#irank {
+    text-align: center;
+    color: white;
+    background-color: rgb(34, 34, 34);
+   /* border: 3px solid #00cccc;*/
+    padding: 20px;
+}
+
+#iconexoes {
+    text-align: center;
+    /*border: 3px solid red;*/
+    padding: 20px;
+    background-color: #d3d3d3;
 }
 
 /* Fim Funções do site */

@@ -15,13 +15,13 @@
     flex-wrap: wrap;
     background-color: black;
     width: 100%;
-    height: 140px;
+    height: 100px;
     margin: 0;
     border-bottom: 2px solid white;
 }
 
 .header > .parte-baixo-header {
-    margin-top: 110px;
+    margin-top: 70px;
     display: block;
 }
 
@@ -35,14 +35,14 @@
 
 .nome-logo > h1 > a { /*Codenect escrito do lado da logo*/
     font-family: var(--fonte01);
-    font-size: 1.8em;
+    font-size: 1em;
     color: var(--cor03);
     text-decoration: none;
     text-shadow: 2px 2px 2px black;
 }
 
 .logo { /*Configura a imagem da logo no header*/
-    height: 100px;
+    height: 70px;
     margin: 20px;
 }
 
