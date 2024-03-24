@@ -367,7 +367,7 @@ main { /*Parte principal do site*/
     background-color: rgb(34, 34, 34);
    /* border: 3px solid #00cccc;*/
     padding: 20px;
-    height: 70%;
+    height: 72%;
 }
 
 #iconexoes {
@@ -377,17 +377,8 @@ main { /*Parte principal do site*/
     padding: 20px;
     background-color: #c8c7c7;
     margin-top: 80px;
-    height: 70%;
+    height: 72%;
 }
-
-.curva {
-    position: absolute;
-    height: 300px;
-    width: 100%;
-    bottom: 0;
-}
-
-
 
 #ibranco {
     content: '';
@@ -414,208 +405,53 @@ main { /*Parte principal do site*/
 /* Fim Funções do site */
 
 .descricao {
+    display: flex;
     background-color: #e6e6e6;
-    height: 600px;
-}
-
-/* Inicio apresentação app */
-.parte-aplicativo {
-    background-image: linear-gradient(to bottom, #06032b, #3865CB);
-    padding-top: 20px;
-}
-
-.parte-aplicativo > h1 {
-    color: var(--cor04);
-    font-family: var(--fonte01);
-    font-size: 2em;
-    text-align: center;
-}
-
-.conteudo-app {
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-}
-
-.conteudo-app > div > p {
-    font-family: var(--fonte05);
-    margin: 50px;
-    color: white;
-    text-align: justify;
-    font-size: 1.6em;
-    text-indent: 40px;
-}
-
-.texto-conteudo-app { /* texto a esquerda da imagem do app nos celulares */
-    width: 50%;
-    margin-top: 60px;
-}
-
-.destaque-texto {
-    color: var(--cor04);
-    font-family: var(--fonte05);
-}
-
-.celular-conteudo-app {  /* imagem do app nos celulares */
-    width: 50%;
-    height: 550px;
-    align-self: center;
-}
-
-/* Fim apresentação app */
-
-
-/* Início Seção Sobre Nós */
-.sobre-nos { /* class principal da seção */
-    background-image: linear-gradient(to top, var(--cor05), #3865CB);
-}
-
-.sobre-nos > h1 { /* título da seção */
-    text-align: center;
-    color: var(--cor04);
-    font-family: var(--fonte01);
-    font-size: 2em;
-}
-
-.parte-sobre-nos { /* container */
+    height: 300vh;
     width: 100vw;
 }
 
-.parte-cima-sobre-nos {
+.imagem-fixa {
+    background-image: url(../imagens/img4-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: center center;
     display: flex;
-    flex-direction: row;
-}
-
-.texto-sobre-nos {
     width: 50%;
-}
-
-.foto-sobre-nos {
-    display: flex;
+    height: 100vh;
     justify-content: center;
     align-items: center;
+}
+
+.texto-container {
+    display: flex;
+    flex-direction: column;
     width: 50%;
 }
 
-.foto-sobre-nos > img {
-    width: 75%;
-    border-radius: 20px;
-    box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.585);
-    background-size: cover;
-    border: 2px solid black;
-}
-
-.titulo-paragrafos-sobre-nos {
-    font-size: 2em;
-    color: white;
-    margin-left: 50px;
-}
-
-.texto-sobre-nos p {
-    font-family: var(--fonte05);
-    color: white;
-    text-align: justify;
+.texto {
+    display: flex;
+    height: 100vh;
+    align-items: center;
     font-size: 1.5em;
-    margin: 50px;
-    margin-top: 20px;
-    margin-bottom: 60px;
-    
-    text-indent: 40px;
+    opacity: 1;
 }
 
-.parte-baixo-sobre-nos {
-    justify-content: space-evenly;
-    column-gap: 50px;
+.texto-contain {
+    font-family: var(--fonte06);
+    margin: 30px;
+    text-align: justify;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.7s all ease-in-out;
 }
 
-.container-cards {
-    display: flex;
-    justify-content: center;
+
+.texto-appear {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 13%;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: var(--cor04);
-    margin: 50px 0px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.473);
-}
-
-.card > img {
-    width: 100%;
-    border-start-end-radius: 7px;
-    border-start-start-radius: 7px;
-    align-self: center;
-    position: relative;
-}
-
-.card > hr {
-    width: 100%;
-    border: 1px solid black;
-    margin: 0px;
-}
-
-.card-corpo {
-    width: 100%;
-    height: 145px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #4E3E90;
+.texto-container div:nth-child(2) {
+    background-color: black;
     color: white;
-    border-end-start-radius: 7px;
-    border-end-end-radius: 7px;
 }
-
-.card-corpo > h4 {
-    font-size: 1.2em;
-    margin: 5px;
-    font-family: var(--fonte04);
-    text-align: center;
-}
-
-.card-corpo > ul {
-    list-style-type: none;
-}
-
-.card-corpo > ul > li {
-    margin: 5px;
-    font-family: var(--fonte02);
-}
-
-.parte-baixo-sobre-nos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    column-gap: 50px;
-}
-
-.container-cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.card-wrapper {
-    min-width: 13%;
-    max-width: 35%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px 0px;
-}
-
-@media screen and (max-width: 1250px) {
-    .card-wrapper {
-        width: 25%; /* Reduzir a largura para que dois cards se encaixem em uma única linha */
-    }
-    .container-cards {
-        justify-content: center; /* Centralizar os cards quando estiverem em uma única linha */
-    }
-}
-
-/* Fim Seção Sobre Nós */

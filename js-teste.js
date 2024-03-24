@@ -29,4 +29,39 @@ function trocarCaracteres() {
         codigoElemento.textContent = originalTexto;
     }
 }
+
+function meioScroll(){
+    const controle = new ScrollMagic.Controller();
+
+    new ScrollMagic.Scene({
+        duration: 1200,
+        triggerElement: '.imagem-fixa',
+        triggerHook: 0
+    })
+    .setPin('.imagem-fixa')
+    .addTo(controle);
+}
+
+meioScroll();
   
+
+
+function scrollAppear(){
+    var textos = document.querySelectorAll('.texto-contain');
+    const textosPosition = [];
+    for(const texto of textos) {
+        textosPosition.push(texto.getBoundingClientRect().top)
+    }
+    var screenPosition = innerHeight / 2 + 200;
+
+    for (const posicao of textosPosition) {
+        if (posicao < screenPosition) {
+            var indice = textosPosition.indexOf(posicao);
+            textos[indice].classList.add('texto-appear')
+
+        }
+    }
+    console.log(textos)
+}
+
+window.addEventListener('scroll', scrollAppear);
