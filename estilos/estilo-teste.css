@@ -406,6 +406,7 @@ main { /*Parte principal do site*/
 
 .descricao {
     display: flex;
+    align-items: center;
     background-color: #e6e6e6;
     height: 300vh;
     width: 100vw;
@@ -415,11 +416,8 @@ main { /*Parte principal do site*/
     background-image: url(../imagens/img4-removebg-preview.png);
     background-repeat: no-repeat;
     background-position: center center;
-    display: flex;
     width: 50%;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
 }
 
 .texto-container {
@@ -432,7 +430,7 @@ main { /*Parte principal do site*/
     display: flex;
     height: 100vh;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1.6em;
     opacity: 1;
 }
 
@@ -440,6 +438,7 @@ main { /*Parte principal do site*/
     font-family: var(--fonte06);
     margin: 30px;
     text-align: justify;
+    text-indent: 30px;
     opacity: 0;
     transform: translateY(20px);
     transition: 0.7s all ease-in-out;
