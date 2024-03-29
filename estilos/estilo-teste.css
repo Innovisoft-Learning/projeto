@@ -222,7 +222,7 @@ main { /*Parte principal do site*/
 .quadrado-linguagem-v2 {
     text-align: center;
     background-color: rgb(34, 34, 34);
-    border-radius: 10px 0px 10px 0px;
+    border-radius: 15px 0px;
     margin: 40px;
     width: 80%;
     height: 80%;
@@ -240,7 +240,7 @@ main { /*Parte principal do site*/
 
 
 .quadrado-linguagem-v2:hover > h1 {
-    color: white;
+    color: var(--cor04);
 }
 
 .quadrado-linguagem-v2:hover {
@@ -365,7 +365,8 @@ main { /*Parte principal do site*/
     text-align: center;
     color: white;
     background-color: rgb(34, 34, 34);
-   /* border: 3px solid #00cccc;*/
+    border-radius: 20px 0px ;
+    border: 3px solid #c8c7c7;
     padding: 20px;
     height: 72%;
 }
@@ -373,7 +374,8 @@ main { /*Parte principal do site*/
 #iconexoes {
     position: relative;
     text-align: center;
-    /*border: 3px solid red;*/
+    border-radius: 20px 0px;
+    border: 3px solid rgb(34, 34, 34);
     padding: 20px;
     background-color: #c8c7c7;
     margin-top: 80px;
